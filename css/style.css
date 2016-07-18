@@ -1,0 +1,81 @@
+/*
+ * --------------
+ * Base / Globals
+ * --------------
+*/
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+/* Clear all the things. Add elements as needed */
+div:before,
+div:after,
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+div:after,
+.clear:after {
+	clear: both;
+}
+
+/* Body */
+body {
+	background: #353334;
+	font-family: "Roboto", sans-serif;
+}
+
+/* Container */
+.container {
+	margin: 0 auto;
+	max-width: 1390px;
+	width: 100%;
+}
+
+/*
+ * ------
+ * Header
+ * ------
+*/
+
+h1{
+  font-size: 1.5em;
+}
+header {
+	background: #302E2F;
+	height: 82px;
+  color: #808080;
+}
+.blog{
+  color:#fff;
+  float:left;
+  margin-left:140px;
+}
+
+.headerStyle {
+	text-align: right;
+	position: absolute;
+	left: 760px;
+	top: 35px;
+	width: 255px;
+	height: 25px;
+	/*z-index: 4*/
+}
+INPUT[type=search] {
+	/*font-family:arial;
+	font-family:SansationLight;*/
+	font-size:11pt;
+	font-weight:bold;
+	background-color:336699;
+	border-color:336699;
+	border-style:solid;
+	border-width:2px;
+	color:gray;
+ height:30px ;
+-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
