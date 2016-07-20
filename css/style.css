@@ -28,54 +28,117 @@ body {
 	background: #353334;
 	font-family: "Roboto", sans-serif;
 }
-
-/* Container */
-.container {
-	margin: 0 auto;
-	max-width: 1390px;
-	width: 100%;  
+.wrapper{
+  margin-left: 100px;
+  padding-right: 50px;
+  max-width: 700px;
+  width=50%;
+  background-color:#fff;
+}
+.bheader{
+  margin-left:40px;
+}
+.dt{
+  width: 100px;
+}
+.bheader .dt{
+  float:left;
+}
+.bheader .nm{
+  float:left;
+  width: 100px; 
 }
 
-/*
- * ------
- * Header
- * ------
-*/
+article h1{
+  text-align: center;
+}
+.text1{
+  margin-left: 35px;
+}
+.header1{
+  text-align:center;
+  font-size: 2em;
+}
+.header2{
+  text-align:center;
+  font-size: 1.6em;
+  color:#EE82EE;
+}
+.desc{
+  line-height:1.6em;
+}
+#jspuzzle{
+   margin: 0.2em;
+  WIDTH: 60%;
+}
+#jspuzzle input{
+  height: 2.5em;
+  visibility: hidden;
+}
+#jspuzzle label{
+  bacground: #f9f9f9;
+  border-radius: .25em .25em 0 0;
+  color: #888;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 1em;
+  height: 2.5em;
+  line-height: 2.5em;
+  margin-right: .25em;
+  padding: 0 1.5em;
+  text-align: center;
+}
+#jspuzzle input:checked + label{
+  backgrounnd: #f1f1f1;
+  color: #444;
+  position: relative;
+  z-index: 6;
+}
+#content{
+  background: #f1f1f1;
+  border-radius: 0 .25em .25em .25em;
+  min-height: 7em;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
 
-h1{
-  font-size: 1.5em;
+#content div {
+  opacity: 0;
+  padding: 0.5em;
+  position: absolute;
+  z-index: -100;
 }
-header {
-	background: #302E2F;
-	height: 82px;
-  color: #808080;
-}
-
-.blog{
-  color:#fff;
- float:left; 
-  margin-left:10px;
+#content-1 ol{
+  margin-bottom: 1em;
+  margin-left: 1em;
+  
 }
 
-.headerStyle {
-	text-align: right;
-	position: absolute;
-	left: 1060px;
-	top: 35px;
-	width: 255px;
-	height: 25px;
-	/*z-index: 4*/
+#content-2 p{
+  /*float:left;*/
+  Clear both;
+  width: 48.5%;
 }
-INPUT[type=search] {
+#jspuzzle input#javascript:checked ~ #content #content-1,
+#jspuzzle input#results:checked ~ #content #content-2{
+  opacity: 1;
+  z-index: 100;
+}
+input.visible{
+  visibility: visible !important;
+}
+#expl{
+  font-size: 0.8em;
+  padding: 0.8em;
+}
+.text2{
+  margin-left: 35px;
+}
+#header3{
+  text-align:left;
+  font-size: 1.6em;
+  color:#EE82EE;
+}
 
-	font-size:11pt;
-	font-weight:bold;
-	background-color:336699;
-	border-color:336699;
-	border-style:solid;
-	border-width:2px;
-	color:gray;
- height:30px ;
--moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-}
