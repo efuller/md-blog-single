@@ -1,0 +1,95 @@
+.related-articles-container {
+	background: #f9f9f9;
+	border-bottom: 1px solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
+	padding: 20px 63px 39px 63px;
+}
+
+.related-articles-container h2 {
+	color: #da3eb0;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 0.1px;
+	margin-bottom: 41px;
+}
+
+.related-articles {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+	position: relative;
+}
+
+.related-articles:before {
+	background: #CCCCCC;
+	bottom: -5px;
+	content: '';
+	left: 27px;
+	position: absolute;
+	top: -10px;
+	width: 1px;
+}
+
+.related-articles > li {
+	font-size: 18px;
+	font-weight: 400;
+	list-style:none; /* Create a positioning context */
+	margin:0 0 16px 39px; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 26px; /* Add some spacing around the content */
+	position:relative; /* Disable the normal item numbering */
+}
+
+.related-articles > li a {
+	color: #4B4B4B;
+	font-weight: 300;
+	letter-spacing: 0.25px;
+	text-decoration: none;
+	transition: color 0.225s ease;
+}
+
+.related-articles > li a:hover,
+.related-articles > li a:focus,
+.related-articles > li a:visited {
+	color: #936BE5;
+}
+
+.related-articles > li a:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:absolute;
+	top: 0px;
+	left:-2em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width: 24px;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding: 6px 4px 4px;
+	border:1px solid #CCCCCC;
+	color:#ADADAD;
+	background:#FFFFFF;
+	border-radius: 50%;
+	font-size: 12px;
+	text-align:center;
+	transition: background-color 0.225s ease, color 0.225s ease;
+
+}
+
+.related-articles > li a:hover:before {
+	background-color: #936be5;
+	border: 1px solid #936BE5;
+	color: #FFFFFF;
+}
+
+.related-articles > li.featured a:before {
+	border: 1px solid #936be5;
+	left: -28px;
+	height: 32px;
+	padding: 10px;
+	top: -4px;
+	width: 32px;
+}
