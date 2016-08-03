@@ -46,17 +46,24 @@ h1{
   font-size: 1.5em;
 }
 header {
-	background: #302E2F;
-	height: 82px;
+  background: #302E2F;
+  height: 82px;
   color: #808080;
 }
 
 .blog{
   color:#fff;
- float:left;
-  margin-left:10px;
+  float:left;
+  margin-left:70px;
+  margin-top:-43px;
 }
-
+.md{
+   margin-top:-43px;
+}
+.logo{
+   margin-top:15px;
+   margin-left:38px;
+}
 .headerStyle {
 	text-align: right;
 	position: absolute;
