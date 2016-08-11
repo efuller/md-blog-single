@@ -3,14 +3,6 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-/* Header */
-/*.site-header {*/
-	/*background: #302E2F;*/
-	/*height: 82px;*/
-	/*margin-bottom: 50px;*/
-	/*padding-top: 20px;*/
-/*}*/
-
 /* Container */
 .container {
 	margin: 0 auto;
@@ -32,11 +24,6 @@ body {
 	position: absolute !important;
 	width: auto;
 }
-
-/* Header Area */
-/*.brand {*/
-	/*float: left;*/
-/*}*/
 
 .footer-logo {
 	border-radius: 50%;
