@@ -57,7 +57,15 @@
 	opacity: 0.9;
 	padding: 10px 66px;
 	text-transform: none;
+	transition: background-color 0.225s ease;
 }
+
+.comment-form-submit input[type="submit"]:hover,
+.comment-form-submit input[type="submit"]:focus,
+.comment-form-submit input[type="submit"]:active {
+	background-color: #FA8DD7;
+}
+
 
 .comment-author-image {
 	float: left;
@@ -105,9 +113,6 @@
 }
 
 .comment-reply-submit:hover,
-.comment-reply-submit:focus,
-.comment-form-submit input[type="submit"]:hover,
-.comment-form-submit input[type="submit"]:focus,
-.comment-form-submit input[type="submit"]:active {
+.comment-reply-submit:focus {
 	color: #FA8DD7;
 }

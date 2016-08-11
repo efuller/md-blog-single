@@ -4,12 +4,12 @@ body {
 }
 
 /* Header */
-.site-header {
-	background: #302E2F;
-	height: 82px;
-	margin-bottom: 50px;
-	padding-top: 20px;
-}
+/*.site-header {*/
+	/*background: #302E2F;*/
+	/*height: 82px;*/
+	/*margin-bottom: 50px;*/
+	/*padding-top: 20px;*/
+/*}*/
 
 /* Container */
 .container {
@@ -34,11 +34,11 @@ body {
 }
 
 /* Header Area */
-.brand {
-	float: left;
-}
+/*.brand {*/
+	/*float: left;*/
+/*}*/
 
-.logo {
+.footer-logo {
 	border-radius: 50%;
 	margin-right: 6px;
 	vertical-align: middle;
@@ -61,38 +61,6 @@ body {
 	font-weight: 700;
 }
 
-.header-search {
-	float: right;
-	position: relative;
-}
-
-.header-search-input {
-	background: #4D4D4D;
-	border-radius: 2px 1px 1px 2px;
-	color: #FFFFFF;
-	font-size: 15px;
-	font-weight: 300;
-	height: 33px;
-	margin-top: 4px;
-	opacity: 0.6;
-	padding-right: 50px;
-	padding-top: 4px;
-	text-indent: 11px;
-	width: 280px;
-}
-
-.header-search-submit {
-	background-color: #717171;
-	border-radius: 1px 2px 2px 1px;
-	height: 33px;
-	padding: 0;
-	position: absolute;
-	right: 0;
-	top: 4px;
-	width: 38px;
-}
-
-
 /* Page Content */
 .site-main {
 	background-color: #353434;
@@ -102,8 +70,8 @@ body {
 	width: 70.46875%;
 }
 
-.site-main .post {
-	padding: 63px;
+.content-area {
+	background-color: #FFFFFF;
 }
 
 .secondary {

@@ -1,0 +1,135 @@
+#sidebar {
+	background-color:#2F4F4F;
+}
+#sidebar input {
+	height: 2.5em;
+	visibility: hidden;
+
+}
+#sidebar label{
+	background: #333333;
+	border-radius: .25em .25em 0 0;
+	color: #4682B4;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	height: 3.5em;
+	margin-right: .25em;
+	width:150px;
+	text-align: center;
+}
+#sidebar input:checked + label{
+	background: #2F4F4F;
+	position: relative;
+	z-index: 5;
+}
+
+#contents{
+	background: /*#f1f1f1;*/#2F4F4F;
+	border-radius: 0 .25em .25em .25em;
+	min-height: 20em;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+}
+#contents div{
+	opacity: 0;
+	padding: 1.5em;
+	position: absolute;
+	z-index: -100;
+}
+#contents-1 p{
+	/*clear both;*/
+	margin-bottom:1em;
+}
+
+#contents-1  a{
+	color: #1c3448;
+	font-size: 1.25em;
+}
+#contents-1 p{
+	color:grey;
+}
+
+#contents-3 p,
+#contents-3 ul{
+	margin-bottom: 1em;
+}
+
+#contents-3 ul{
+	margin-left: 2em;
+
+}
+
+#sidebar input#tabs-1:checked ~ #contents #contents-1,
+
+#sidebar input#tabs-2:checked ~ #contents #contents-2{
+	opacity: 1;
+	z-index: 100;
+
+}
+input.visible{
+	visibility: visible !important;
+}
+.customHr{
+	width: 100%;
+	color: #293535;
+	line-height: 2px;
+	background-color: #293535;
+	margin-top: -6px;
+	margin-bottom: 10px;
+}
+
+.submit_btn{
+	position: absolute;
+	left: 840px;
+	top: 787px;
+	color:grey;
+	cursor:pointer;
+	border-color:#293535 #2F4F4F;
+	border-radius:3px;
+	width: 25.1%;
+	height:5.9%;
+	font-size: 0.9em;
+	background:#2F4F4F;
+}
+.submit_btn:hover{
+	background-color: #C390D4;
+	color:black;
+	box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.signup{
+	position: absolute;
+	left: 840px;
+	top: 850px;
+	width:25%;
+}
+.placehoder{
+	color: #999;
+}
+
+.email{
+	border: 2px solid #999;
+	padding: 2px;
+	border-radius:6px;
+	height:39px;
+	width: 220px;
+	background-color:grey;
+	color:white;
+	font-size: 1em;
+}
+.subscribe{
+	background-color:#756699;
+	font-size: 1em;
+	width:120px;
+	height:39px;
+	float:right;
+	color:white;
+	cursor:pointer;
+}
+.subscribe:hover{
+	background-color: #C390D4;
+	color:black;
+	box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
