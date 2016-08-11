@@ -1,0 +1,50 @@
+/*
+ * ------
+ * Header
+ * ------
+*/
+
+h1{
+	font-size: 1.5em;
+}
+header.site-header {
+	background: #302E2F;
+	height: 82px;
+	color: #808080;
+}
+
+.blog{
+	color:#fff;
+	float:left;
+	margin-left:70px;
+	margin-top:-43px;
+}
+.md{
+	margin-top:-43px;
+}
+.logo{
+	margin-top:15px;
+	margin-left:38px;
+}
+.headerStyle {
+	text-align: right;
+	position: absolute;
+	left: 1060px;
+	top: 35px;
+	width: 255px;
+	height: 25px;
+	/*z-index: 4*/
+}
+INPUT[type=search] {
+
+	font-size:11pt;
+	font-weight:bold;
+	background-color:#336699;
+	border-color:#336699;
+	border-style:solid;
+	border-width:2px;
+	color:gray;
+	height:30px ;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}

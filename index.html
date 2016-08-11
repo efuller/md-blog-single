@@ -1,153 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Blog.Modern Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/related.css">
+    <link rel="stylesheet" href="css/post-meta.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-<header>
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-google" viewBox="0 0 20 20">
+            <title>google</title>
+            <path class="path1" d="M1.989 5.589c0 1.494 0.499 2.572 1.482 3.205 0.806 0.52 1.74 0.598 2.226 0.598 0.118 0 0.213-0.006 0.279-0.010 0 0-0.154 1.004 0.59 1.996h-0.034c-1.289 0-5.493 0.269-5.493 3.727 0 3.516 3.861 3.695 4.636 3.695 0.061 0 0.097-0.002 0.097-0.002 0.008 0 0.063 0.002 0.158 0.002 0.497 0 1.782-0.062 2.975-0.643 1.548-0.75 2.333-2.059 2.333-3.885 0-1.764-1.196-2.814-2.069-3.582-0.533-0.469-0.994-0.873-0.994-1.266 0-0.4 0.337-0.701 0.762-1.082 0.689-0.615 1.339-1.492 1.339-3.15 0-1.457-0.189-2.436-1.354-3.057 0.121-0.062 0.551-0.107 0.763-0.137 0.631-0.086 1.554-0.184 1.554-0.699v-0.099h-4.599c-0.046 0.002-4.651 0.172-4.651 4.389zM9.413 14.602c0.088 1.406-1.115 2.443-2.922 2.574-1.835 0.135-3.345-0.691-3.433-2.096-0.043-0.676 0.254-1.336 0.835-1.863 0.589-0.533 1.398-0.863 2.278-0.928 0.104-0.006 0.207-0.012 0.31-0.012 1.699 0.001 2.849 0.999 2.932 2.325zM8.212 4.626c0.451 1.588-0.23 3.246-1.316 3.553-0.125 0.035-0.253 0.052-0.384 0.052-0.994 0-1.979-1.006-2.345-2.393-0.204-0.776-0.187-1.458 0.047-2.112 0.229-0.645 0.643-1.078 1.163-1.225 0.125-0.035 0.254-0.053 0.385-0.053 1.2 0 1.972 0.498 2.45 2.178zM16 8v-3h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 32 32">
+            <title>facebook</title>
+            <path class="path1" d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 32 32">
+            <title>twitter</title>
+            <path class="path1" d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 32 32">
+            <title>github</title>
+            <path class="path1" d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+        </symbol>
+    </defs>
+</svg>
+<header class="site-header">
     <div class="container">
-      <div class="logo">
-        <img src="http://www.ozkancorporation.com/media/blue_fox_technology_logo.png"
-        width="32px height=32px">
-      </div>
-      <div class="blog">    <h1>Blog.</h1>
+        <div class="logo">
+            <img src="http://www.ozkancorporation.com/media/blue_fox_technology_logo.png"
+                 width="32px height=32px">
+        </div>
+        <div class="blog">    <h1>Blog.</h1>
+        </div>
+        <div class="md">
+            <h1>ModernDeveloper</h1>
+        </div>
+        <!--</div>-->
+        <!--  </div><!-- .container -->
+        <div class=headerStyle>
+            <form method="get" action="http://www.google.com/search">
+                <input type="search" results=5 name="q" size="15" maxlength="255 "
+                       value="" placeholder="Search"/>
+                <input type="submit" value="GO"/>
+            </form>
+        </div>
     </div>
-    <div class="md">
-       <h1>ModernDeveloper</h1>
-     </div> 
-  <!--</div>-->
-  <!--  </div><!-- .container -->
-<div class=headerStyle>
-      <form method="get" action="http://www.google.com/search">
-         <input type="search" results=5 name="q" size="15" maxlength="255 "
-         value="" placeholder="Search"/>
-         <input type="submit" value="GO"/>
-         </form>
-      </div>  
-  </div>
 </header>
+<div class="page-content">
+    <div class="container skinny">
+        <main class="site-main" role="main">
+            <div class="content-area">
+            <article>
+                <p class="header1">Image Optimization with Cloudinary</p>
+                <div class="bheader">
+                    <p class="dt"> 2days ago by</p>
+                    <scan><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername" width="45px;" height="40px">
+                        <p class="nm">Jonathan Graef
+                        </p></scan></div>
+            </article>
+            <div><img src="http://ichef-1.bbci.co.uk/news/976/cpsprodpb/93DB/production/_88615873_976x1024b0010280.jpg" width="700px" height="400px">
+            </div><br>
+            <article class="desc">
+                <div class="text1">
+                    We always looking for ways to improve site speed. We lazy load, minify, and concatenate, create sprites, experiment with caching, and just about everything else we can think of.
+                    <p></p>
+                    The idea behind image optimization is simple but execution hasn't always been:each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary:uploading, storing, amnipulating, and delivering images and videos on the web.
 
-  <div class="wrapper">
-    <article>
-      <p class="header1">Image Optimization with Cloudinary</p>
-      <div class="bheader">
-        <p class="dt"> 2days ago by</p>
-        <scan><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername" width=45px; height="40px">
-        <p class="nm">Jonathan Graef</scan>
-      </div>
-    </article>
-      <div><img src="http://ichef-1.bbci.co.uk/news/976/cpsprodpb/93DB/production/_88615873_976x1024b0010280.jpg"
-        width="700px" height="400px">
-      </div><br>
-   <article class="desc">
-    <div class="text1">
-      We always looking for ways to improve site speed. We lazy load, minify, and concatenate, create sprites, experiment with caching, and just about everything else we can think of.
-      <p></p>
-The idea behind image optimization is simple but execution hasn't always been:each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary:uploading, storing, amnipulating, and delivering images and videos on the web.
+                    <p class="header2"> Using Cloudinary</p>
+                    <p></p>
+                    There are many use cases for a service like Clodinary. WhenI think about my site, I see one ovious need: resized,optimized images on post list pages. <span id="colorc"> Google PageSpeed</span> crucifies my sitefor image size and I an't blame them. I have a regex rouitine that searches for the first image in a post and uses that as the post image, but rouitine doesn't otimize images, so if the image is very large, I may scale it down with HTML attributes but the download size is still massive.
+                </div>
+            </article>
+            <div id="jspuzzle">
+                <input id="tab-1" type="radio" name="tab-group" checked="checked">
+                <label for="tab-1"><span id="clrcodr">JAVA SCRIPT</span></label>
 
-      <p class="header2"> Using Cloudinary</p>
-      <p></p>
-      There are many use cases for a service like Clodinary. WhenI think about my site, I see one ovious need: resized,optimized images on post list pages. <span id="colorc"> Google PageSpeed</span> crucifies my sitefor image size and I an't blame them. I have a regex rouitine that searches for the first image in a post and uses that as the post image, but rouitine doesn't otimize images, so if the image is very large, I may scale it down with HTML attributes but the download size is still massive.
-     </div>
-      </article>
-   <div id="jspuzzle">
-    <input id="tab-1" type="radio" name="tab-group" checked="checked" />
-    <label for="tab-1"><span id="clrcodr">JAVA SCRIPT</label>
+                <input id="tab-3" type="radio" name="tab-group">
+                <label for="tab-3">RESULTS</label>
 
-<input id="tab-3" type="radio" name="tab-group"/>
-    <label for="tab-3">RESULTS</label>
+                <div id="content">
+                    <div id="content-1">
+                        <figure><p><code>
+                        </code></p><ol><code>
+                            <li><span id="clrcodr">var</span><span id="clrcodb"> myArray</span>=[<span id="clrcodr">6,5,4,3,1,2</span>];</li><li><span id="clrcodr">myArray</span>.<span id="clrcodp">sort()</span>;</li>
+                            <li><span id="clrcodr">console</span>.<span id="clrcodp">log</span>(<span id="clrcodr">myArray</span>); -&gt;1,2,3,4,5</li></code></ol><p></p>
+                            <figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.</figcaption>
+                        </figure>
+                    </div>
 
- <div id="content">
-   <div id="content-1">
-  <figure><p><code>
-          <ol>
-            <li><span id="clrcodr">var</span><span id="clrcodb"> myArray</span>=[<span id="clrcodr">6,5,4,3,1,2</span>];</li><li><span id="clrcodr">myArray</span>.<span id="clrcodp">sort()</span>;</li>
-            <li><span id="clrcodr">console</span>.<span id="clrcodp">log</span>(<span id="clrcodr">myArray</span>); ->1,2,3,4,5</li></ol></code></p>
-<figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.</figcaption>
-        </figure>
-          </div>
+                    <div id="content-3">
+                        <p> 1,2,3,4,5,6 </p>
 
-<div id="content-3">
-<p> 1,2,3,4,5,6 </p>
+                    </div>
+                </div>
+            </div>
 
-                   </div>
-                   </div>
-                   </div>
+            <article class="desc">
+                <div class="text2">
+                    If you are looking to serve media via the &lt;\picture&gt; element for different media queries, <span id="colorc">Cloudinary has an excellent structure</span> for doing that as well.
+                    <p></p>
+                    Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!
+                    <p></p>
+                    <p id="header3">Try Cloudinary!</p>
+                    <span id="colorc">Cloudinary</span> is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video. The APIs are all intuitive, effective, and easy to use. The optimization plugs are all usefull and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.
+                </div>
+            </article>
+            </div><!-- .content-area -->
+            <div class="related-articles-container">
+                <h2>Related Articles on Encyclopedia.Modern Developer</h2>
+                <ol class="related-articles">
+                    <li><a href="#">5 More Awesome New Mozilla Technologies You’ve Never Heard Of</a></li>
+                    <li class="featured"><a href="#">Git Hook – npm install if package.json is Modified</a></li>
+                    <li><a href="#">Complete Server Stability and Security with Plesk</a></li>
+                    <li><a href="#">Use Mozilla Firefox DevTools in Chrome</a></li>
+                    <li><a href="#">Great Tools to Use in Your Projects</a></li>
+                </ol>
+            </div><!-- .related-articles -->
+            <div class="post-meta">
+                <nav class="menu-tags">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#">Optimization</a></li>
+                        <li class="menu-item"><a href="#">Cloudinary</a></li>
+                        <li class="menu-item"><a href="#">JPEG</a></li>
+                        <li class="menu-item"><a href="#">Tutorial</a></li>
+                    </ul>
+                </nav><!-- .menu-tags -->
+                <nav class="menu-social">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#">
+                                <svg class="icon icon-twitter">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <svg class="icon icon-facebook">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <svg class="icon icon-github">
+                                    <use xlink:href="#icon-github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <svg class="icon icon-google">
+                                    <use xlink:href="#icon-google"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- .menu-social -->
+            </div><!-- .post-meta -->
 
-  <article class="desc">
-  <div class="text2">
-    If you are looking to serve media via the <\picture> element for different media queries, <span id="colorc">Cloudinary has an excellent structure</span> for doing that as well.
-    <p></p>
-Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!
-    <p></p>
-    <p id="header3">Try Cloudinary!</p>
-    <span id=colorc>Cloudinary</span> is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video. The APIs are all intuitive, effective, and easy to use. The optimization plugs are all usefull and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.
+            <section class="section-comments">
+                <div class="respond">
+                    <h2 class="comments-title">Post Comment</h2>
+                    <form action="#" method="post">
+                        <div class="comment-form">
+                            <label class="screen-reader" for="comment">Post Comment</label>
+                            <textarea name="comment" id="comment" cols="45" rows="5" class="comment-text" required placeholder="Your Comment"></textarea>
+                        </div><!-- .comment-form -->
+                        <div class="comment-form-submit">
+                            <input type="submit" value="Post">
+                        </div>
+                    </form>
+                </div><!-- .respond -->
+                <div class="comments-area">
+                    <ol class="comments">
+                        <li class="comment">
+                            <article class="comment-entry">
+                                <header class="comment-header">
+                                    <div class="comment-author-image">
+                                        <img src="images/rory.png" alt="Author">
+                                    </div>
+                                    <div class="comment-author-meta">
+                                        <div class="comment-author-name">Rory Duncan</div>
+                                        <span class="comment-time">1 days ago</span>
+                                    </div>
+                                </header>
+                                <div class="comment-content">
+                                    <p>
+                                        Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I’m very interested in these methods for developing a “Sustainable Web Design” strategy. I was working on a “green boilerplate” with tools like this a few years ago, but now the route to go seems to be bundling cloud services into the design workflow.
+                                    </p>
+                                </div>
+                                <div class="comment-reply">
+                                    <a href="#" class="comment-reply-submit">Reply</a>
+                                </div>
+                            </article>
+                            <ol class="comments-child">
+                                <li class="comment child">
+                                    <article class="comment-entry child">
+                                        <header class="comment-header">
+                                            <div class="comment-author-image">
+                                                <img src="images/peter.png" alt="Author">
+                                            </div>
+                                            <div class="comment-author-meta">
+                                                <div class="comment-author-name">Peter Chang</div>
+                                                <span class="comment-time">2 days ago</span>
+                                            </div>
+                                        </header>
+                                        <div class="comment-content">
+                                            <p>
+                                                I never heard of it. I’m using ShortPixel so far, with great results actually, but I’ll give it a try to this Cloudinary. Thanks!
+                                            </p>
+                                        </div>
+                                        <div class="comment-reply">
+                                            <a href="#" class="comment-reply-submit">Reply</a>
+                                        </div>
+                                    </article><!-- .comment-entry -->
+                                </li><!-- .comment .child -->
+                            </ol><!-- .comments-child -->
+                        </li><!-- .comment -->
+                    </ol><!-- .comments -->
+                </div><!-- .comments-area -->
+            </section><!-- .section-comments -->
+        </main><!-- .site-main -->
+        <aside id="sidebar" class="secondary">
+            <input id="tabs-1" type="radio" name="tabs-group" checked="checked">
+            <label for="tabs-1">Recent Articles</label>
+
+            <input id="tabs-2" type="radio" name="tabs-group">
+            <label for="tabs-2">Upcoming Posts</label>
+
+            <div id="contents">
+                <div id="contents-1">
+                    <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
+
+                    <p>A day ago</p>
+                    <p class="customHr">-</p>
+
+                    <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
+
+                    <p>A  2 days ago</p>
+                    <p class="customHr">-</p>
+
+                    <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
+                    <p>12 days ago</p>
+                    <p class="customHr">-</p>
+                    <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
+
+                    <p>A day ago</p>
+                    <p class="customHr">-</p>
+                    <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
+
+                    <p>A  2 days ago</p>
+                    <p class="customHr">-</p>
+
+                    <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
+                    <p>12 days ago</p>
+                </div>
+                <div id="contents-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="loadmore">
+                <input type="submit" class="submit_btn" value="LOAD MORE">
+            </div>
+            <div class="signup">
+                <input type="email" class="txtinput email" placeholder="Your Email">
+                <input type="submit" class="subscribe" value="Subscribe">
+            </div>
+        </aside><!-- #sidebar .secondary -->
+    </div><!-- .container -->
+</div><!-- .page-content -->
+<footer class="primary-footer">
+    <div class="container">
+        <div class="footer-brand">
+            <img class="footer-logo" src="images/footer-logo.png" alt="logo">
+            <h1 class="site-title"><span>Blog</span>.Modern Developer</h1>
+        </div><!-- .brand -->
+        <div class="site-info">
+            <div class="site-copyright">© 2016 Modern Developer Inc.</div>
+            <div class="contact">blog@moderndeveloper.com</div>
+        </div><!-- .header-search -->
     </div>
-    </article>
-    </div>
-    <section>
-   </section>
-<div id="sidebar">
-    <input id="tabs-1" type="radio" name="tabs-group" checked="checked" />
-    <label for="tabs-1">Recent Articles</label>
-
-    <input id="tabs-2" type="radio" name="tabs-group"/>
-    <label for="tabs-2">Upcoming Posts</label>
-
-    <div id="contents">
-        <div id="contents-1">
-            <a href=#>Getting Your Selected Article Published on Encyclopedia</a></li>
-
-            <p>A day ago</p>
-            <p class="customHr">-</p>
-
-            <a href=#>Welcome to Encyclpedia Modern Developer</a></li>
-
-            <p>A  2 days ago</p>
-            <p class="customHr">-</p>
-
-            <a href=#>All Trappings</a>
-            <p>12 days ago</p>
-            <p class="customHr">-</p>
-            <a href=#>Getting Your Selected Article Published on Encyclopedia</a></li>
-
-            <p>A day ago</p>
-            <p class="customHr">-</p>
-            <a href=#>Welcome to Encyclpedia Modern Developer</a></li>
-
-            <p>A  2 days ago</p>
-            <p class="customHr">-</p>
-
-            <a href=#>All Trappings</a>
-            <p>12 days ago</p>
-        </div>
-        <div id="contents-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-            </ul>
-
-        </div>
-    </div>
-</div>
-<div class="loadmore">
-    <input type="submit" class="submit_btn" value="LOAD MORE"/>
-</div>
-
-<div class="signup">
-    <input type="email" class="txtinput email"
-           placeholder="Your Email">
-    <input type="submit"
-           class="subscribe" value="Subscribe">
-</div>
-
+</footer>
 </body>
 </html>

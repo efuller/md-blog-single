@@ -1,0 +1,116 @@
+.bheader{
+	margin-left:40px;
+}
+.dt{
+	width: 100px;
+}
+.bheader .dt{
+	float:left;
+}
+.bheader .nm{
+	float:left;
+	width: 100px;
+}
+.wrapper{
+	margin-left: 100px;
+	padding-right: 50px;
+	max-width: 700px;
+	width: 50%;
+	background-color:#fff;
+}
+article h1{
+	text-align: center;
+}
+.text1{
+	margin-left: 2em;
+}
+.header1{
+	text-align:center;
+	font-size: 2em;
+}
+.header2{
+	text-align:center;
+	font-size: 1.6em;
+	color:#EE82EE;
+}
+#jspuzzle {
+	margin: 2em;
+	WIDTH: 95%;
+}
+#jspuzzle input {
+	height: 2.5em;
+	visibility: hidden;
+}
+#jspuzzle label{
+	background: #f9f9f9;
+	border-radius: .25em .25em 0 0;
+	color: #888;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 1em;
+	height: 2.5em;
+	margin-right: .25em;
+	text-align: center;
+}
+#jspuzzle input:checked + label{
+	background: #f1f1f1;
+	color: #444;
+	position: relative;
+	z-index: 6;
+}
+
+#content{
+	background: #f1f1f1;
+	border-radius: 0 .25em .25em .25em;
+	min-height: 10em;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+}
+#content div{
+	opacity: 0;
+	padding: 1.5em;
+	position: absolute;
+	z-index: -100;
+}
+#content-1 p{
+	clear: both;
+	margin-bottom:1em;
+}
+
+#content-3 p
+{
+	margin-bottom: 1em;
+}
+
+#jspuzzle input#tab-1:checked ~ #content #content-1,
+	/*#container input#tab-2:checked ~ #content #content-2,*/
+#jspuzzle input#tab-3:checked ~ #content #content-3{
+	opacity: 1;
+	z-index: 100;
+
+}
+input.visible{
+	visibility: visible !important;
+}
+
+#colorc{
+	color:#ab5dab;
+}
+#clrcodr{
+	color:red;
+}
+#clrcodb{
+	color:blue;
+}
+#clrcodp{
+	color:#EE82EE;
+}
+.text2{
+	margin:2em;
+}
+#fcap{
+	padding-top: 1em;
+	font-size: 0.9em;
+}
