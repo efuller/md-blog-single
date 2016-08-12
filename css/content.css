@@ -4,9 +4,12 @@
 .dt{
 	width: 100px;
 }
-.bheader .dt{
-	float:left;
+.blg_place{
+        float:left;	
 }
+/*.bheader .dt{
+  	float:left;
+}*/
 .bheader .nm{
 	float:left;
 	width: 100px;
@@ -22,7 +25,7 @@ article h1{
 	text-align: center;
 }
 .text1{
-	margin-left: 2em;
+	margin: 0 2em 0 2em;
 }
 .header1{
 	text-align:center;
@@ -35,7 +38,7 @@ article h1{
 }
 #jspuzzle {
 	margin: 2em;
-	WIDTH: 95%;
+	WIDTH: 90%;
 }
 #jspuzzle input {
 	height: 2.5em;
@@ -60,33 +63,32 @@ article h1{
 	z-index: 6;
 }
 
-#content{
+#jzpuzzle_content{
 	background: #f1f1f1;
 	border-radius: 0 .25em .25em .25em;
-	min-height: 10em;
+	min-height: 8em;
 	position: relative;
 	width: 100%;
 	z-index: 5;
 }
-#content div{
+#jzpuzzle_content div{
 	opacity: 0;
 	padding: 1.5em;
 	position: absolute;
 	z-index: -100;
 }
-#content-1 p{
-	clear: both;
+#java_script p{
 	margin-bottom:1em;
 }
 
-#content-3 p
-{
+#results p{
+
 	margin-bottom: 1em;
 }
 
-#jspuzzle input#tab-1:checked ~ #content #content-1,
-	/*#container input#tab-2:checked ~ #content #content-2,*/
-#jspuzzle input#tab-3:checked ~ #content #content-3{
+#jspuzzle input#tab-1:checked ~ #jspuzzle_content #java_script,
+
+#jspuzzle input#tab-3:checked ~ #jspuzzle_content #results{
 	opacity: 1;
 	z-index: 100;
 
