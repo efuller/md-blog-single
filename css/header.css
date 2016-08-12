@@ -13,15 +13,6 @@ header.site-header {
 	color: #808080;
 }
 
-/*.blog{
-	color:#fff;
-	float:left;
-	margin-left:70px;
-	margin-top:-43px;
-}*/
-/*.md{
-	margin-top:-43px;
-}*/
 .logo{
 	margin-top:15px;
 	margin-left:38px;
@@ -29,7 +20,7 @@ header.site-header {
 .header-search {
 	text-align: right;
 	position: absolute;
-	left: 1060px;
+	right: 10px;
 	top: 35px;
 	width: 255px;
 	height: 25px;
