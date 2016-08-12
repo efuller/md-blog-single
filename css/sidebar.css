@@ -9,9 +9,9 @@
 #sidebar label{
 	background: #333333;
 	border-radius: .25em .25em 0 0;
-	color: #4682B4;
+	color: #7FFFD4;
 	cursor: pointer;
-	display: block;
+/*	display: block;*/
 	float: left;
 	font-size: 1.2em;
 	height: 3.5em;
@@ -25,7 +25,7 @@
 	z-index: 5;
 }
 
-#contents{
+#sidebar_content{
 	background: /*#f1f1f1;*/#2F4F4F;
 	border-radius: 0 .25em .25em .25em;
 	min-height: 20em;
@@ -33,10 +33,9 @@
 	width: 100%;
 	z-index: 5;
 }
-#contents div{
+#sidebar_content div{
 	opacity: 0;
 	padding: 1.5em;
-	position: absolute;
 	z-index: -100;
 }
 #contents-1 p{
@@ -44,27 +43,27 @@
 	margin-bottom:1em;
 }
 
-#contents-1  a{
-	color: #1c3448;
+#recent_articles  a{
+	color: #00FFFF;
 	font-size: 1.25em;
 }
-#contents-1 p{
-	color:grey;
+#recent_articles p{
+	color:#008B8B;
 }
 
-#contents-3 p,
-#contents-3 ul{
+#upcoming_posts p,
+#upcoming_posts ul{
 	margin-bottom: 1em;
 }
 
-#contents-3 ul{
+#upcoming_posts ul{
 	margin-left: 2em;
 
 }
 
-#sidebar input#tabs-1:checked ~ #contents #contents-1,
+#sidebar input#tabs-1:checked ~ #sidebar_contents #recent_articles,
 
-#sidebar input#tabs-2:checked ~ #contents #contents-2{
+#sidebar input#tabs-2:checked ~ #sidebar_contents #upcoming_posts{
 	opacity: 1;
 	z-index: 100;
 
@@ -76,34 +75,31 @@ input.visible{
 	width: 100%;
 	color: #293535;
 	line-height: 2px;
-	background-color: #293535;
+	background-color: #008B8B;
 	margin-top: -6px;
 	margin-bottom: 10px;
 }
-
-.submit_btn{
-	position: absolute;
-	left: 840px;
-	top: 787px;
+.sidebar_entry li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  color:#008B8B;
+}
+.signup input[type="submit"]
+{
 	color:grey;
 	cursor:pointer;
-	border-color:#293535 #2F4F4F;
+	border-color:#293535;
 	border-radius:3px;
-	width: 25.1%;
-	height:5.9%;
+	width: 57.031%;
+	height:5%;
 	font-size: 0.9em;
-	background:#2F4F4F;
+	background-color: #2F4F4F;
 }
 .submit_btn:hover{
 	background-color: #C390D4;
 	color:black;
 	box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.signup{
-	position: absolute;
-	left: 840px;
-	top: 850px;
-	width:25%;
 }
 .placehoder{
 	color: #999;
