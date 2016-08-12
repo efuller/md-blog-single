@@ -36,10 +36,11 @@
 #sidebar_content div{
 	opacity: 0;
 	padding: 1.5em;
+	position: absolute;
 	z-index: -100;
 }
 #recent_articles p{
-	/*clear both;*/
+	clear both;
 	margin-bottom:1em;
 }
 
@@ -49,6 +50,7 @@
 }
 #recent_articles p{
 	color:#008B8B;
+	margin-bottom: 1em;
 }
 
 #upcoming_posts p,
