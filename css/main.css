@@ -64,8 +64,11 @@ body {
 .secondary {
 	float: left;
 	width: 27.03125%;
+	background-color:#2F4F4F;
 }
-
+.img_place{
+  padding: 0 3em 0 3em;
+}
 .section-footer {
 	padding: 0 63px;
 }
