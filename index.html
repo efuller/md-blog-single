@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,73 +43,84 @@
         <img class="logo" src="http://www.ozkancorporation.com/media/blue_fox_technology_logo.png" width="32px height=32px">
         <h1 class="site-title"><span>Blog</span>.Modern Developer</h1>
         <div class=header-search>
-            <form method="get" action="http://www.google.com/search">
-                <input type="search" results=5 name="q" size="15" maxlength="255 "
-                       value="" placeholder="Search"/>
-                <input type="submit" value="GO"/>
+            <form method="get" action="#">
+                <input type="search" results=5 name="q" size="15" maxlength="255 " value="" placeholder="Search"/>
+                <input type="submit"  value="GO"/>
             </form>
-        </div> <!-- header-search-->
-    </div> <!--container -->
+        </div> <!-- header style -->
+    </div> <!-- container -->
 </header>
 <div class="page-content">
     <div class="container skinny">
         <main class="site-main" role="main">
             <div class="content-area">
-            <article>
-                <p class="header1">Image Optimization with Cloudinary</p>
-                <div class="bheader">
-                    <scan class="dt"> 2days ago by</scan>
-                </div>    
-                <div>
-                      <div class="blg_place"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"                                    width="45px" height="40px">               
-                      </div>              
+                <article>
+                    <p class="header1">Image Optimization with Cloudinary</p>
+                    <div class="bheader">
+                        <span class="dt"> 2days ago by</span>              
+                    </div>
+                    <div>
+                       <div class="blg_place"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"                                    width="45px" height="40px">               
+                       </div>              
                       <scan class="nm">Jonathan Graef</scan>
-                 </div>          
-            </article>
-            <div class="mg_place"><img src="http://ichef-1.bbci.co.uk/news/976/cpsprodpb/93DB/production/_88615873_976x1024b0010280.jpg" width="700px" height="400px">
-            </div><br>
-            <article class="desc">
-                <div class="text1">
-                    We always looking for ways to improve site speed. We lazy load, minify, and concatenate, create sprites, experiment with caching, and just about everything else we can think of.
+                   </div>          
+                </article>
+                <div class="img_place">
+                    <img src="http://ichef-1.bbci.co.uk/news/976/cpsprodpb/93DB/production/_88615873_976x1024b0010280.jpg" width="805px" height="400px">
+                </div><br>
+                <article class="desc">
+                    <div class="text1">
+                         We always looking for ways to improve site speed. We lazy load, minify, and concatenate,  create sprites, experiment with caching, and just about everything else we can think of.
                     <p></p>
-                    The idea behind image optimization is simple but execution hasn't always been:each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary:uploading, storing, amnipulating, and delivering images and videos on the web.
+                         The idea behind image optimization is simple but execution hasn't always been:each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary:uploading, storing, amnipulating, and delivering images and videos on the web.
                     <p class="header2"> Using Cloudinary</p>
                     <p></p>
                     There are many use cases for a service like Clodinary. WhenI think about my site, I see one ovious need: resized,optimized images on post list pages. <span id="colorc"> Google PageSpeed</span> crucifies my sitefor image size and I an't blame them. I have a regex rouitine that searches for the first image in a post and uses that as the post image, but rouitine doesn't otimize images, so if the image is very large, I may scale it down with HTML attributes but the download size is still massive.
-                </div> <!--text1-->
-            </article> <!-- desc-->
+                </div>
+            </article> <!-- desc -->
             <div id="jspuzzle">
                 <input id="tab-1" type="radio" name="tab-group" checked="checked">
                 <label for="tab-1"><span id="clrcodr">JAVA SCRIPT</span></label>
-
                 <input id="tab-3" type="radio" name="tab-group">
                 <label for="tab-3">RESULTS</label>
-
                 <div id="jspuzzle_content">
                     <div id="java_script">
-                        <figure><p><code>
-                        </code></p><ol><code>
-                            <li><span id="clrcodr">var</span><span id="clrcodb"> myArray</span>=[<span id="clrcodr">6,5,4,3,1,2</span>];</li><li><span id="clrcodr">myArray</span>.<span id="clrcodp">sort()</span>;</li>
-                            <li><span id="clrcodr">console</span>.<span id="clrcodp">log</span>(<span id="clrcodr">myArray</span>); -&gt;1,2,3,4,5</li></code></ol><p></p>
-                            <figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.</figcaption>
+                        <figure>
+                             <p><code></code></p>
+                             <ol><code>
+                                <li><span id="clrcodr">var</span>
+                                    <span id="clrcodb"> myArray</span>
+                                  =[<span id="clrcodr">6,5,4,3,1,2</span>];
+                                </li>
+                                <li><span id="clrcodr">myArray</span>.
+                                    <span id="clrcodp">sort()</span>;
+                                </li>
+                                <li><span id="clrcodr">console</span>.
+                                    <span id="clrcodp">log</span>(
+                                    <span id="clrcodr">myArray</span>);-&gt;1,2,3,4,5
+                                </li>
+                               </code>
+                             </ol>
+                                 <p></p>
+                             <figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.
+                             </figcaption>
                         </figure>
                     </div> <!-- java_script -->
 
                     <div id="results">
                         <p> 1,2,3,4,5,6 </p>
                     </div>
-                </div> <!--jspuzzle_content-->
-            </div> <!--jspuzzle -->
-
+                </div> <!-- ontent -->
+            </div><!-- jspuzzle-content -->
             <article class="desc">
                 <div class="text2">
                     If you are looking to serve media via the &lt;\picture&gt; element for different media queries, <span id="colorc">Cloudinary has an excellent structure</span> for doing that as well.
                     <p></p>
                     Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!
                     <p></p>
-                    <p id="header2">Try Cloudinary!</p>
+                    <p class="header2">Try Cloudinary!</p>
                     <span id="colorc">Cloudinary</span> is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video. The APIs are all intuitive, effective, and easy to use. The optimization plugs are all usefull and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.
-                </div>
+                </div> <!-- text2 -->
             </article>
             </div><!-- .content-area -->
             <div class="related-articles-container">
@@ -228,6 +239,7 @@
                 </div><!-- .comments-area -->
             </section><!-- .section-comments -->
         </main><!-- .site-main -->
+      
         <aside id="sidebar" class="secondary">
             <input id="tabs-1" type="radio" name="tabs-group" checked="checked">
             <label for="tabs-1">Recent Articles</label>
@@ -235,56 +247,53 @@
             <input id="tabs-2" type="radio" name="tabs-group">
             <label for="tabs-2">Upcoming Posts</label>
 
-            <div id="sidebar_contents">
+            <div id="sidebar_content">
                 <div id="recent_articles">
-                    <ol class="sidebar_entry">
-                        <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
-
-                            <p>A day ago</p>
-                            <p class="customHr">-</p>
-                        </li>
-                        <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
-
-                            <p>A  2 days ago</p>
-                            <p class="customHr">-</p>
-                        </li> 
-                        <li></li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
-                            <p>12 days ago</p>
-                            <p class="customHr">-</p>
-                        </li>    
-                        <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
-
-                            <p>A day ago</p>
-                            <p class="customHr">-</p>
-                        </li>    
-                        <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
-
-                            <p>A  2 days ago</p>
-                            <p class="customHr">-</p>
-                        </li>
-                        <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
-                            <p>12 days ago</p>
-                        </li>
-                   </ol>    
-                </div> <!--recent_articles-->
-                <div id="upcoming_posts">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-                    </ul>
-
-                </div> <!--upcoming_posts-->
-            </div><!-- sidebar_contents -->
-            <div class="loadmore">
-                <input type="submit" class="submit_btn" value="LOAD MORE">
-            </div>
-            <div class="signup">
-                <input type="email" class="txtinput email" placeholder="Your Email">
-                <input type="submit" class="subscribe" value="Subscribe">
-            </div>
-        </aside><!-- #sidebar .secondary -->
+                    <ol class="sidebar_entry">        
+                       <li> <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
+                           <p>A day ago</p>
+                           <p class="customHr">-</p>
+                       </li>
+                       <li> <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
+                           <p>A  2 days ago</p>
+                           <p class="customHr">-</p>
+                       </li>
+                      <li> <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
+                          <p>12 days ago</p>
+                          <p class="customHr">-</p>
+                      </li>
+                      <li>  <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
+                          <p>A day ago</p>
+                          <p class="customHr">-</p>
+                      </li>
+                      <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
+                          <p>A  2 days ago</p>
+                          <p class="customHr">-</p>
+                      </li>
+                      <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
+                         <p>12 days ago</p>
+                      </li>
+                  </ol> 
+              </div> <!--recent_articles-->
+              <div id="upcoming_posts">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.
+                  </p>
+                  <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
+                 </ul>
+             </div> <!-- upcoming posts-->
+         </div> <!-- sidebar_content -->
+         <div class="loadmore">
+             <input type="submit" class="submit_lm" value="LOAD MORE">
+         </div>
+         <div class="signup">
+              <input type="email" class="txtinput email"               placeholder="Your Email">
+              <input type="submit" class="subscribe"                   value="Subscribe">
+        </div>      
+    </aside><!-- #sidebar .secondary -->
+      
     </div><!-- .container -->
 </div><!-- .page-content -->
 <footer class="primary-footer">
