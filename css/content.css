@@ -1,18 +1,19 @@
 .bheader{
 	margin-left:40px;
-}
-.dt{
+	float:left;
 	width: 100px;
 }
+/*.dt{
+	width: 100px;
+}*/
 .blg_place{
         float:left;	
 }
 /*.bheader .dt{
   	float:left;
 }*/
-.bheader .nm{
+.nm{
 	float:left;
-	width: 100px;
 }
 .wrapper{
 	margin-left: 100px;
