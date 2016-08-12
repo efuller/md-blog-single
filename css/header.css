@@ -13,27 +13,38 @@ header.site-header {
 	color: #808080;
 }
 
-.blog{
+/*.blog{
 	color:#fff;
 	float:left;
 	margin-left:70px;
 	margin-top:-43px;
-}
-.md{
+}*/
+/*.md{
 	margin-top:-43px;
-}
+}*/
 .logo{
 	margin-top:15px;
 	margin-left:38px;
 }
-.headerStyle {
+.header-search {
 	text-align: right;
 	position: absolute;
 	left: 1060px;
 	top: 35px;
 	width: 255px;
 	height: 25px;
-	/*z-index: 4*/
+}
+.header-search input[type="submit"] {
+  width:0.2em;
+  height:1.5em;
+  font-size:0.7em;
+  text-transform: none;
+  vert-align:center;
+  text-align:center;
+  border:1px;
+  padding-left:0.5px;
+  padding-top:0px;
+  border-radius: 20%;
 }
 INPUT[type=search] {
 
