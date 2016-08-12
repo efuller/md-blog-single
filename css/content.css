@@ -75,7 +75,7 @@ article h1{
 #jzpuzzle_content div{
 	opacity: 0;
 	padding: 1.5em;
-	position: absolute;
+/*	position: absolute;*/
 	z-index: -100;
 }
 #java_script p{
