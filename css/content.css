@@ -8,7 +8,7 @@
 }*/
 .blg_place{
         float:left;
-        margin-bottom:0.5em;
+        margin-bottom: 0.5em;	
 }
 /*.bheader .dt{
   	float:left;
@@ -38,83 +38,86 @@ article h1{
 	font-size: 1.6em;
 	color:#EE82EE;
 }
+
 #jspuzzle {
-	margin: 2em;
-	WIDTH: 90%;
+    margin: 2em;
+    width: 95%;
 }
 #jspuzzle input {
-	height: 2.5em;
-	visibility: hidden;
+	  height: 2.5em;
+	  visibility: hidden;
 }
 #jspuzzle label{
-	background: #f9f9f9;
-	border-radius: .25em .25em 0 0;
-	color: #888;
-	cursor: pointer;
-	display: block;
-	float: left;
-	font-size: 1em;
-	height: 2.5em;
-	margin-right: .25em;
-	text-align: center;
+    background: #f9f9f9;
+    border-radius: .25em .25em 0 0;
+    color: #888;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1em;
+    height: 2.5em;
+    margin-right: .25em;
+    text-align: center;
 }
 #jspuzzle input:checked + label{
-	background: #f1f1f1;
-	color: #444;
-	position: relative;
-	z-index: 6;
+    background: #f1f1f1;
+    color: #444;
+    position: relative;
+    z-index: 6;
 }
 
-#jzpuzzle_content{
-	background: #f1f1f1;
-	border-radius: 0 .25em .25em .25em;
-	min-height: 8em;
-	position: relative;
-	width: 100%;
-	z-index: 5;
+#jspuzzle-content{
+    background: #f1f1f1;
+    border-radius: 0 .25em .25em .25em;
+    min-height: 10em;
+    position: relative;
+    width: 100%;
+    z-index: 5;
 }
-#jzpuzzle_content div{
-	opacity: 0;
-	padding: 1.5em;
-	position: absolute;
-	z-index: -100;
+#jspuzzle-content div{
+    opacity: 0;
+    padding: 1.5em;
+    position: absolute;
+    z-index: -100;
 }
-#java_script p{
-	margin-bottom:1em;
-}
-
-#results p{
-
-	margin-bottom: 1em;
+#java-script p{
+    clear both;
+    margin-bottom:1em;
 }
 
-#jspuzzle input#tab-1:checked ~ #jspuzzle_content #java_script,
+#results p
+{
+  margin-bottom: 1em;
+}
 
-#jspuzzle input#tab-3:checked ~ #jspuzzle_content #results{
-	opacity: 1;
-	z-index: 100;
+#jspuzzle input#tab-1:checked ~ #jspuzzle-content #java-script,
 
+#jspuzzle input#tab-3:checked ~ #jspuzzle-content #results
+{
+    opacity: 1;
+    z-index: 100;  
 }
 input.visible{
-	visibility: visible !important;
+    visibility: visible !important;
 }
 
 #colorc{
-	color:#ab5dab;
+    color:#ab5dab;
 }
 #clrcodr{
-	color:red;
+    color:red;
 }
 #clrcodb{
-	color:blue;
+  color:blue;
 }
 #clrcodp{
-	color:#EE82EE;
+    color:#EE82EE;
 }
 .text2{
-	margin:2em;
+  margin:2em;
 }
 #fcap{
-	padding-top: 1em;
-	font-size: 0.9em;
+  padding-top: 1em;
+  font-size: 0.9em;
 }
+

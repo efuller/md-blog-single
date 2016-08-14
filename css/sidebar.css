@@ -57,6 +57,7 @@
 #upcoming_posts p,
 #upcoming_posts ul{
 	margin-bottom: 1em;
+	color:#008B8B;
 }
 
 #upcoming_posts ul{
@@ -86,20 +87,44 @@ input.visible{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-        color:#008B8B;
+    color:#008B8B;
+}
+.sidebar_btn{
+	float:right;
+}
+
+.loadmore input[type="submit"]{
+	background-color:#2F4F4F;
+	border-radius:3px;
+	border: 3px solid #293535;
+	height:6%;
+	width:348px;
+	color:#00FFFF;
+	margin-bottom: 20px;
+}
+.signup{
+	float:right;
+	padding-right: 17px;
 }
 .signup input[type="submit"]
-{
-	color:grey;
+{   
+	
+	color:white;
 	cursor:pointer;
 	border-color:#293535;
-	border-radius:3px;
-	width: 57.031%;
-	height:5%;
+	border-radius:6px;
+	width: 150px;
+	height:40px;
 	font-size: 0.9em;
-	background-color: #2F4F4F;
+	background-color: #756699;
+	
 }
-.submit_btn:hover{
+signup input[type="submit"]:hover{
+  background-color: #C390D4;
+  color:black;
+  box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);    
+}
+.txtinput_email:hover{
 	background-color: #C390D4;
 	color:black;
 	box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -108,27 +133,13 @@ input.visible{
 	color: #999;
 }
 
-.email{
+.txtinput_email{
 	border: 2px solid #999;
-	padding: 2px;
+	margin-right: 4px;
 	border-radius:6px;
 	height:39px;
-	width: 220px;
-	background-color:grey;
-	color:white;
+	width: 150px;
+	background-color:gray;
 	font-size: 1em;
-}
-.subscribe{
-	background-color:#756699;
-	font-size: 1em;
-	width:120px;
-	height:39px;
-	float:right;
-	color:white;
-	cursor:pointer;
-}
-.subscribe:hover{
-	background-color: #C390D4;
-	color:black;
-	box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	text-align: center;
 }
