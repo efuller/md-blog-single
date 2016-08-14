@@ -1,4 +1,4 @@
-
+--
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,12 +42,17 @@
     <div class="container">
         <img class="logo" src="http://www.ozkancorporation.com/media/blue_fox_technology_logo.png" width="32px height=32px">
         <h1 class="site-title"><span>Blog</span>.Modern Developer</h1>
-        <div class=header-search>
-            <form method="get" action="#">
+        
+        <div class="header-search">
+             <form method="get" action="#">
+             
                 <input type="search" results=5 name="q" size="15" maxlength="255 " value="" placeholder="Search"/>
-                <input type="submit"  value="GO"/>
-            </form>
-        </div> <!-- header style -->
+                <div id="button-holder">
+                    <img src="images/search.png" />
+                </div>
+             </form>   
+        </div>
+          
     </div> <!-- container -->
 </header>
 <div class="page-content">
@@ -60,7 +65,7 @@
                         <span class="dt"> 2days ago by</span>              
                     </div>
                     <div>
-                       <div class="blg_place"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"                                    width="45px" height="40px">               
+                       <div class="blg_place"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"  width="45px" height="40px">               
                        </div>              
                       <scan class="nm">Jonathan Graef</scan>
                    </div>          
@@ -79,39 +84,41 @@
                 </div>
             </article> <!-- desc -->
             <div id="jspuzzle">
-                <input id="tab-1" type="radio" name="tab-group" checked="checked">
-                <label for="tab-1"><span id="clrcodr">JAVA SCRIPT</span></label>
-                <input id="tab-3" type="radio" name="tab-group">
-                <label for="tab-3">RESULTS</label>
-                <div id="jspuzzle_content">
-                    <div id="java_script">
+                <input id="tab-1" type="radio" name="tab-group"  checked="checked" />
+                <label for="tab-1"><span id="clrcodr">JAVA SCRIPT
+                </label>    
+                <input id="tab-3" type="radio" name="tab-group"/>
+                <label for="tab-3">RESULTS</label>    
+                <div id="jspuzzle-content">
+                    <div id="java-script">
                         <figure>
-                             <p><code></code></p>
-                             <ol><code>
-                                <li><span id="clrcodr">var</span>
-                                    <span id="clrcodb"> myArray</span>
-                                  =[<span id="clrcodr">6,5,4,3,1,2</span>];
-                                </li>
-                                <li><span id="clrcodr">myArray</span>.
-                                    <span id="clrcodp">sort()</span>;
-                                </li>
-                                <li><span id="clrcodr">console</span>.
-                                    <span id="clrcodp">log</span>(
-                                    <span id="clrcodr">myArray</span>);-&gt;1,2,3,4,5
-                                </li>
-                               </code>
-                             </ol>
-                                 <p></p>
+                            <p><code>
+                                <ol>
+                                    <li>
+                                        <span id="clrcodr">var</span>
+                                        <span id="clrcodb"> myArray</span>=[
+                                        <span id="clrcodr">6,5,4,3,1,2</span>];
+                                    </li>
+                                    <li>
+                                        <span id="clrcodr">myArray</span>.
+                                        <span id="clrcodp">sort()</span>;
+                                    </li>
+                                    <li>
+                                        <span id="clrcodr">console</span>.
+                                        <span id="clrcodp">log</span>(
+                                        <span id="clrcodr">myArray</span>); ->1,2,3,4,5
+                                    </li>
+                                </ol>
+                             </code></p>
                              <figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.
-                             </figcaption>
+                             </figcaption>        
                         </figure>
-                    </div> <!-- java_script -->
-
+                    </div>  <!-- java script -->
                     <div id="results">
-                        <p> 1,2,3,4,5,6 </p>
-                    </div>
-                </div> <!-- ontent -->
-            </div><!-- jspuzzle-content -->
+                         <p> 1,2,3,4,5,6 </p>
+                    </div><!-- results -->
+               </div><!-- jspuzzle-content -->
+            </div><!-- jspuzzle -->           
             <article class="desc">
                 <div class="text2">
                     If you are looking to serve media via the &lt;\picture&gt; element for different media queries, <span id="colorc">Cloudinary has an excellent structure</span> for doing that as well.
@@ -284,15 +291,18 @@
                       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
                  </ul>
              </div> <!-- upcoming posts-->
-         </div> <!-- sidebar_content -->
-         <div class="loadmore">
-             <input type="submit" class="submit_lm" value="LOAD MORE">
-         </div>
-         <div class="signup">
-              <input type="email" class="txtinput email"               placeholder="Your Email">
-              <input type="submit" class="subscribe"                   value="Subscribe">
-        </div>      
-    </aside><!-- #sidebar .secondary -->
+             </div> <!-- sidebar_content -->
+         </aside>
+         <div class="sidebar_btn">
+             <div class="loadmore">
+                 <input type="submit" class="submit_lm" value="LOAD MORE">
+             </div>
+             <div class="signup">
+                 <input type="email" class="txtinput_email" placeholder="Your Email">
+                 <input type="submit" class="subscribe"  value="Subscribe">
+            </div> 
+        </div><!-- sidebarbtn-->    
+  <!--  </aside><!-- #sidebar .secondary -->
       
     </div><!-- .container -->
 </div><!-- .page-content -->
