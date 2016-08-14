@@ -17,36 +17,50 @@ header.site-header {
 	margin-top:15px;
 	margin-left:38px;
 }
-.header-search {
-	text-align: right;
-	position: absolute;
-	right: 10px;
-	top: 35px;
-	width: 255px;
-	height: 25px;
-}
-.header-search input[type="submit"] {
-  width:0.2em;
-  height:1.5em;
-  font-size:0.7em;
-  text-transform: none;
-  vert-align:center;
-  text-align:center;
-  border:1px;
-  padding-left:0.5px;
-  padding-top:0px;
-  border-radius: 20%;
-}
-INPUT[type=search] {
 
-	font-size:11pt;
-	font-weight:bold;
-	background-color:#336699;
-	border-color:#336699;
-	border-style:solid;
-	border-width:2px;
-	color:gray;
-	height:30px ;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+
+.header-search {
+  position: absolute;
+  color: #aaa;
+  font-size: 16px;
+  right:15px;
+  top:35px;
+
 }
+ 
+ INPUT[type=search] {
+
+  font-size:11pt;
+  font-weight:bold;
+  background-color:#336699;
+  border-color:#336699;
+  border-style:solid;
+  border-width:2px;
+  border-left:none;
+  color:gray;
+  height:30px ;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-bottom-left-radius: 0px;
+} 
+#button-holder{
+    background-color:#797979;
+    border-color:#336699;
+    border-style:solid;
+    border-width:2px;
+    cursor:pointer;
+    float:left;
+    height:26px;
+    margin:3px 0 0 0;
+    text-align:center;
+    width:35px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+  
+#button-holder img{
+    margin:3px;
+    width:20px; 
+}
+
+
