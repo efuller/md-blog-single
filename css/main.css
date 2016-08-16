@@ -63,8 +63,8 @@ body {
 
 .secondary {
 	float: left;
-	width: 27.03125%;
-	background-color:#2F4F4F;
+	width: 27.185%;/*27.03125%;*/
+	background-color:#262020;
 }
 .img_place {
         width:100%;
