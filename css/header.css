@@ -30,32 +30,35 @@ header.site-header {
  
  INPUT[type=search] {
 
+  background: #B0B0B0;
+  border: 1px solid #aaa;
+  border-radius: 1px;
   font-size:11pt;
   font-weight:bold;
-  background-color:#336699;
-  border-color:#336699;
+  border-color:#fcfcfc;
   border-style:solid;
-  border-width:2px;
-  border-left:none;
-  color:gray;
+  border-width:3px;
+  border-right:none;
   height:30px ;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
+  width:200px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   -moz-border-bottom-left-radius: 0px;
 } 
 #button-holder{
-    background-color:#797979;
-    border-color:#336699;
+    background-color:#C0C0C0;
+    border-color:#fcfcfc;
     border-style:solid;
-    border-width:2px;
+    border-width:3px;
     cursor:pointer;
-    float:left;
-    height:26px;
-    margin:3px 0 0 0;
+    float:right;
+    border-left: none;
+    height:30px;
+    margin: 0 0 0 0;
     text-align:center;
     width:35px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
 }
   
 #button-holder img{

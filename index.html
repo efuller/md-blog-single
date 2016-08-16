@@ -45,11 +45,11 @@
         
         <div class="header-search">
              <form method="get" action="#">
-             
-                <input type="search" results=5 name="q" size="15" maxlength="255 " value="" placeholder="Search"/>
                 <div id="button-holder">
                     <img src="images/search.png" />
                 </div>
+             
+                <input type="Search" results=5 name="q" size="15" maxlength="255 " value="" placeholder="Search"/>
              </form>   
         </div>
           
@@ -61,13 +61,13 @@
             <div class="content-area">
                 <article>
                     <p class="header1">Image Optimization with Cloudinary</p>
-                    <div class="bheader">
-                        <span class="dt"> 2days ago by</span>              
+                    <div class="blogger-header">
+                        <span class="blogger-time"> 2 days ago by </span>              
                     </div>
-                    <div>
-                       <div class="blg_place"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"  width="45px" height="40px">               
+                    <div class="blogger-meta">
+                       <div class="blogger_image"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"  width="50px" height="40px">               
                        </div>              
-                      <scan class="nm">Jonathan Graef</scan>
+                      <scan class="blogger-name">Jonathan Graef</scan>
                    </div>          
                 </article>
                 <div class="img_place">
@@ -248,6 +248,7 @@
         </main><!-- .site-main -->
       
         <aside id="sidebar" class="secondary">
+		-<div id="sidebar-tab">
             <input id="tabs-1" type="radio" name="tabs-group" checked="checked">
             <label for="tabs-1">Recent Articles</label>
 
@@ -292,7 +293,8 @@
                  </ul>
              </div> <!-- upcoming posts-->
              </div> <!-- sidebar_content -->
-         </aside>
+		</div><!--sidebar tab-->	 
+        <!-- </aside>-->
          <div class="sidebar_btn">
              <div class="loadmore">
                  <input type="submit" class="submit_lm" value="LOAD MORE">
@@ -302,7 +304,7 @@
                  <input type="submit" class="subscribe"  value="Subscribe">
             </div> 
         </div><!-- sidebarbtn-->    
-  <!--  </aside><!-- #sidebar .secondary -->
+   </aside><!-- #sidebar .secondary 
       
     </div><!-- .container -->
 </div><!-- .page-content -->

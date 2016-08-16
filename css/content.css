@@ -1,20 +1,23 @@
-.bheader{
+.blogger-header{
 	margin-left:40px;
+    margin-top:9px;
 	float:left;
-	width: 100px;
+	width: 120px;
 }
-/*.dt{
-	width: 100px;
-}*/
-.blg_place{
+
+.blogger_image{
         float:left;
-        margin-bottom: 0.5em;	
+        margin-bottom: 0.7em;
+        border-radius:50%;	
 }
-/*.bheader .dt{
-  	float:left;
-}*/
-.nm{
+
+.blogger-name{
 	float:left;
+    margin-left:10px;
+    margin-top:9px;
+}
+.blogger-time{
+    margin-left:10px;
 }
 .wrapper{
 	margin-left: 100px;
@@ -44,7 +47,7 @@ article h1{
     width: 95%;
 }
 #jspuzzle input {
-	  height: 2.5em;
+	  height: 2em;
 	  visibility: hidden;
 }
 #jspuzzle label{
@@ -55,7 +58,8 @@ article h1{
     display: block;
     float: left;
     font-size: 1em;
-    height: 2.5em;
+    height: 2.2em;
+    padding-top:0.5em;
     margin-right: .25em;
     text-align: center;
 }

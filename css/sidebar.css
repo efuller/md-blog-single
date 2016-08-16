@@ -1,33 +1,35 @@
-#sidebar {
-	background-color:#2F4F4F;
+#sidebar-tab {
+	background-color:#262020;
 	height:698px;
+	width:350px;
 }
-#sidebar input {
-	height: 2.5em;
+#sidebar-tab input {
+	height: 1.7em;
 	visibility: hidden;
 
 }
-#sidebar label{
-	background: #333333;
+#sidebar-tab label{
+	background: #353334;
 	border-radius: .25em .25em 0 0;
-	color: #7FFFD4;
+	color: #FF66FF;
 	cursor: pointer;
 	display: block;
 	float: left;
 	font-size: 1.2em;
 	height: 3.5em;
 	margin-right: .25em;
+	margin-left:0.1em;
 	width:150px;
 	text-align: center;
 }
-#sidebar input:checked + label{
-	background: #2F4F4F;
+#sidebar-tab input:checked + label{
+	background: #262020;
 	position: relative;
 	z-index: 5;
 }
 
 #sidebar_content{
-	background: #2F4F4F;
+	background: #262020;
 	border-radius: 0 .25em .25em .25em;
 	min-height: 20em;
 	position: relative;
@@ -46,18 +48,18 @@
 }
 
 #recent_articles  a{
-	color: #00FFFF;
+	color: #EE82EE;
 	font-size: 1.25em;
 }
 #recent_articles p{
-	color:#008B8B;
+	color: #f4b4f4;
 	margin-bottom: 1em;
 }
 
 #upcoming_posts p,
 #upcoming_posts ul{
 	margin-bottom: 1em;
-	color:#008B8B;
+	color: #EE82EE;
 }
 
 #upcoming_posts ul{
@@ -65,9 +67,9 @@
 
 }
 
-#sidebar input#tabs-1:checked ~ #sidebar_content #recent_articles,
+#sidebar-tab input#tabs-1:checked ~ #sidebar_content #recent_articles,
 
-#sidebar input#tabs-2:checked ~ #sidebar_content #upcoming_posts{
+#sidebar-tab input#tabs-2:checked ~ #sidebar_content #upcoming_posts{
 	opacity: 1;
 	z-index: 100;
 
@@ -77,9 +79,9 @@ input.visible{
 }
 .customHr{
 	width: 100%;
-	color: #293535;
+	color: #c14fa5;
 	line-height: 2px;
-	background-color: #008B8B;
+	background-color: #c14fa5;
 	margin-top: -6px;
 	margin-bottom: 10px;
 }
@@ -87,25 +89,23 @@ input.visible{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-    color:#008B8B;
-}
-.sidebar_btn{
-	float:right;
 }
 
 .loadmore input[type="submit"]{
-	background-color:#2F4F4F;
-	border-radius:3px;
-	border: 3px solid #293535;
-	height:6%;
-	width:348px;
-	color:#00FFFF;
+	background-color: #262020;
+	border-radius:8px;
+	border: 8px solid #353334;
+	border-color: #353334;
+	height:55px;
+	width:355px;
+	color:#FF66FF;
+	margin-top: 10px;
 	margin-bottom: 20px;
+
 }
-.signup{
-	float:right;
-	padding-right: 17px;
-}
+.sidebar_btn{
+	background: #353334;
+}	
 .signup input[type="submit"]
 {   
 	
@@ -113,33 +113,36 @@ input.visible{
 	cursor:pointer;
 	border-color:#293535;
 	border-radius:6px;
-	width: 150px;
-	height:40px;
-	font-size: 0.9em;
-	background-color: #756699;
+	width: 130px;
+	height:35px;
+	font-size: 0.7em;
+	background-color: #f263cf;
+	text-align:left;
+	margin-left:10px;
 	
 }
-signup input[type="submit"]:hover{
+#subscribe{
+	/*margin-right:20px;*/
+}
+.signup input[type="submit"]:hover{
   background-color: #C390D4;
   color:black;
   box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);    
 }
-.txtinput_email:hover{
-	background-color: #C390D4;
-	color:black;
-	box-shadow: 012px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+
 .placehoder{
 	color: #999;
 }
 
 .txtinput_email{
 	border: 2px solid #999;
-	margin-right: 4px;
+	margin-left: 5px;
 	border-radius:6px;
-	height:39px;
-	width: 150px;
-	background-color:gray;
+	height:35px;
+	width: 190px;
+	background-color:#B0B0B0;
+	color:black;
 	font-size: 1em;
 	text-align: center;
+	padding-right:35px;
 }
