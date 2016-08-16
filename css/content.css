@@ -5,7 +5,7 @@
 	width: 120px;
 }
 
-.blogger_image{
+.blogger-image{
         float:left;
         margin-bottom: 0.7em;
         border-radius:50%;	
@@ -26,7 +26,7 @@
 	width: 50%;
 	background-color:#fff;
 }
-article h1{
+.article h1{
 	text-align: center;
 }
 .text1{

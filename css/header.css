@@ -4,6 +4,7 @@
  * ------
 */
 
+
 h1{
 	font-size: 1.5em;
 }
@@ -13,52 +14,46 @@ header.site-header {
 	color: #808080;
 }
 
+.brand{
+   float:left;
+}
 .logo{
-	margin-top:15px;
-	margin-left:38px;
+   border-radius: 50%;
+	 margin-top:6px;
+	 vertical-align: middle;
 }
 
 
 .header-search {
-  position: absolute;
-  color: #aaa;
-  font-size: 16px;
-  right:15px;
-  top:35px;
+   float:right;
+   position: relative;
 
 }
  
- INPUT[type=search] {
+ .header-search-input {
+     background: #4D4D4D;
+     border-radius: 2px 1px 1px 2px;
+     color: #FFFFFF;
+     font-size: 15px;
+     font-weight: 300;
+     height: 33px;
+     margin-top: 4px;
+     opacity: 0.6;
+     padding-right: 50px;
+     padding-top: 4px;
+     text-indent: 11px;
+     width: 280px;
+ } 
 
-  background: #B0B0B0;
-  border: 1px solid #aaa;
-  border-radius: 1px;
-  font-size:11pt;
-  font-weight:bold;
-  border-color:#fcfcfc;
-  border-style:solid;
-  border-width:3px;
-  border-right:none;
-  height:30px ;
-  width:200px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-bottom-left-radius: 0px;
-} 
-#button-holder{
-    background-color:#C0C0C0;
-    border-color:#fcfcfc;
-    border-style:solid;
-    border-width:3px;
-    cursor:pointer;
-    float:right;
-    border-left: none;
-    height:30px;
-    margin: 0 0 0 0;
-    text-align:center;
-    width:35px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+ .header-search-submit {
+    background-color:#717171;
+    border-radius: 2px 1px 1px 2px;
+    height: 33px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 38px;
 }
   
 #button-holder img{
