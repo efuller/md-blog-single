@@ -1,6 +1,14 @@
+
+.blogger{
+    positon:absolute;
+    left:160px;
+
+}
+
+
 .blogger-header{
-	margin-left:40px;
     margin-top:9px;
+    margin-left:40px;
 	float:left;
 	width: 120px;
 }
