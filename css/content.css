@@ -1,31 +1,38 @@
 
 .blogger{
     positon:absolute;
-    left:160px;
-
+    left:140px;
+    margin-top:40px;
 }
 
 
 .blogger-header{
-    margin-top:9px;
-    margin-left:40px;
+    margin-top:-17px;
+    margin-left:58px;
 	float:left;
-	width: 120px;
 }
-
+.blogger-meta{
+    float:left;
+    margin-top: -22px;
+}
 .blogger-image{
         float:left;
-        margin-bottom: 0.7em;
+        padding-left:11px;
+        padding-bottom: 2em;
         border-radius:50%;	
 }
 
 .blogger-name{
-	float:left;
-    margin-left:10px;
-    margin-top:9px;
+    float:left;
+    margin-left:6px;
+    margin-top:4px;
+    color:#EE82EE;
+    font-size:1em;
 }
 .blogger-time{
     margin-left:10px;
+    font-size: 1em;
+    color:#A9A9A9;
 }
 .wrapper{
 	margin-left: 100px;
@@ -37,17 +44,27 @@
 .article h1{
 	text-align: center;
 }
-.text1{
-	margin: 0 2em 0 2em;
+.text1, .text2{
+	margin: 1.2em 3.0em 0 3.2em;
+    font-size:1.2em;
+    letter-spacing: 0.5px;
+    line-height: 1.6em;
+
 }
 .header1{
-	text-align:center;
-	font-size: 2em;
+    margin-top:55px;
+    margin-left: 1.4em;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.95em;
+    font-weight: 300;
+    letter-spacing: 0px;
 }
 .header2{
-	text-align:center;
+    margin-top:2em;
+	text-align:left;
 	font-size: 1.6em;
-	color:#EE82EE;
+	color:#BA55D3;
+    opacity:0.7;
 }
 
 #jspuzzle {
@@ -55,7 +72,7 @@
     width: 95%;
 }
 #jspuzzle input {
-	  height: 2em;
+	  height: 1.8em;
 	  visibility: hidden;
 }
 #jspuzzle label{
@@ -66,9 +83,8 @@
     display: block;
     float: left;
     font-size: 1em;
-    height: 2.2em;
-    padding-top:0.5em;
-    margin-right: .25em;
+    height: 4.5em;
+    padding: 0.5em 1.1em 1.5em 1.1em;
     text-align: center;
 }
 #jspuzzle input:checked + label{
@@ -81,7 +97,7 @@
 #jspuzzle-content{
     background: #f1f1f1;
     border-radius: 0 .25em .25em .25em;
-    min-height: 10em;
+    min-height: 9em;
     position: relative;
     width: 100%;
     z-index: 5;
@@ -96,7 +112,9 @@
     clear both;
     margin-bottom:1em;
 }
-
+#java-script li{
+    margin-bottom:0.8em;
+}
 #results p
 {
   margin-bottom: 1em;
@@ -114,7 +132,7 @@ input.visible{
 }
 
 #colorc{
-    color:#ab5dab;
+    color:#da3eb0;#ab5dab;
 }
 #clrcodr{
     color:red;

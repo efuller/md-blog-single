@@ -1,26 +1,28 @@
 #sidebar-tab {
 	background-color:#262020;
-	height:698px;
-	width: 347px;
+	height:730px;
+	width: 355px;
 }
 #sidebar-tab input {
-	height: 1.7em;
+	height: 1.9em;
 	visibility: hidden;
 
 }
 #sidebar-tab label{
 	background: #353334;
 	border-radius: .25em .25em 0 0;
-	color: #FF66FF;
+	color: #6495ED;
 	cursor: pointer;
 	display: block;
 	float: left;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	height: 3.5em;
+	padding-top:0.5em;
 	margin-right: .25em;
 	margin-left:0.1em;
 	width:150px;
 	text-align: center;
+	opacity:0.9;
 }
 #sidebar-tab input:checked + label{
 	background: #262020;
@@ -38,32 +40,35 @@
 }
 #sidebar_content div{
 	opacity: 0;
-	padding: 1.5em;
+	padding: 1em 3.5em 1em 0em;
 	position: absolute;
 	z-index: -100;
 }
 #recent_articles p{
 	clear both;
-	margin-bottom:1em;
+	margin-bottom:1.5em;
+	color: #B0C4DE;
+	opacity:0.5;
 }
 
 #recent_articles  a{
-	color: #EE82EE;
-	font-size: 1.25em;
-}
-#recent_articles p{
-	color: #f4b4f4;
-	margin-bottom: 1em;
+	color: #87CEEB;
+	font-size: 1em;
+	opacity: 0.7; 
 }
 
 #upcoming_posts p,
 #upcoming_posts ul{
-	margin-bottom: 1em;
-	color: #EE82EE;
+	margin-bottom: 1.5em;
+	color: #87CEEB;
 }
 
 #upcoming_posts ul{
-	margin-left: 2em;
+	margin-left: -1em;
+
+}
+#upcoming_posts li{
+	margin-left: -1em;
 
 }
 
@@ -79,11 +84,12 @@ input.visible{
 }
 .customHr{
 	width: 100%;
-	color: #c14fa5;
-	line-height: 2px;
-	background-color: #c14fa5;
+	color: #C0C0C0;
+	line-height: 1px;
+	background-color:#C0C0C0;#F0F8FF;#B0C4DE;
 	margin-top: -6px;
 	margin-bottom: 10px;
+	opacity:0.1;
 }
 .sidebar_entry li{
 	list-style-type: none;
@@ -94,13 +100,16 @@ input.visible{
 .loadmore input[type="submit"]{
 	background-color: #262020;
 	border-radius:8px;
-	border: 8px solid #353334;
+	border: 2px solid #353334;
 	border-color: #353334;
 	height:55px;
-	width:355px;
-	color:#FF66FF;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	width:357px;
+	color:#6495ED;
+	margin-top: 0px;
+	margin-bottom:45px;
+	margin-left:-0px;
+	letter-spacing: 0.1px;
+	font-weight:300;
 
 }
 .sidebar_btn{
@@ -113,16 +122,19 @@ input.visible{
 	cursor:pointer;
 	border-color:#293535;
 	border-radius:6px;
-	width: 130px;
-	height:35px;
-	font-size: 0.7em;
+	width: 127px;
+	height:45px;
 	background-color: #f263cf;
-	text-align:left;
-	margin-left:10px;
+	margin-left:7px;
+	text-transform: none;
+	font-weight:300;
 	
 }
+.signup{
+	text-align:left;
+}
 #subscribe{
-	/*margin-right:20px;*/
+	text-align:left;
 }
 .signup input[type="submit"]:hover{
   background-color: #C390D4;
@@ -135,14 +147,13 @@ input.visible{
 }
 
 .txtinput_email{
-	border: 2px solid #999;
-	margin-left: 5px;
+	border: 1px solid #999;
+	margin-left: 0px;
 	border-radius:6px;
-	height:35px;
-	width: 190px;
-	background-color:#B0B0B0;
+	height:45px;
+	width: 210px;
+	background-color:#696969;
 	color:black;
-	font-size: 1em;
 	text-align: center;
 	padding-right:35px;
 }
