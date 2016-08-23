@@ -16,6 +16,10 @@ body {
 	width: 100%;
 }
 
+.page-content {
+	margin-top: 50px;
+}
+
 /* Screen reader text */
 .screen-reader {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -59,6 +63,8 @@ body {
 
 .content-area {
 	background-color: #FFFFFF;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 .secondary {
