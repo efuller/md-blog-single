@@ -1,6 +1,5 @@
 
 .blogger{
-    positon:absolute;
     left:140px;
     margin-top:40px;
 }
@@ -15,14 +14,19 @@
     float:left;
     margin-top: -22px;
 }
-.blogger-image{
-        float:left;
-        padding-left:11px;
-        padding-bottom: 2em;
-        border-radius:50%;	
+
+.blogger-image {
+	float: left;
+	padding-left: 11px;
+	padding-bottom: 2em;
+	border-radius: 50%;
 }
 
-.blogger-name{
+.blogger-image img {
+	border-radius: 2px;
+}
+
+.blogger-name {
     float:left;
     margin-left:6px;
     margin-top:4px;
@@ -109,7 +113,7 @@
     z-index: -100;
 }
 #java-script p{
-    clear both;
+    clear: both;
     margin-bottom:1em;
 }
 #java-script li{
@@ -132,7 +136,7 @@ input.visible{
 }
 
 #colorc{
-    color:#da3eb0;#ab5dab;
+    color:#da3eb0;
 }
 #clrcodr{
     color:red;
