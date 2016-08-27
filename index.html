@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,99 +40,80 @@
 </svg>
 <header class="site-header">
     <div class="container">
-    <div class="brand">
-           <img class="logo" src="images/logo.png" alt="logo">
+        <div class="brand">
+            <img class="logo" src="images/logo.png" alt="logo">
             <h1 class="site-title"><span>Blog</span>.Modern Developer</h1>
-         </div><!-- .brand -->
-         <div class="header-search">
-             <form action="">
-                 <label for="header-search" class="screen-reader">Search</label>
-                 <input type="text" class="header-search-input" name="header-search" id="header-search"
-                        placeholder="Search...">
-                 <button class="header-search-submit" type="submit">
-                     <img src="images/search.png" alt="Search">
-                 </button>
-             </form>
-         </div><!-- .header-search -->
+        </div><!-- .brand -->
+        <div class="header-search">
+            <form action="">
+                <label for="header-search" class="screen-reader">Search</label>
+                <input type="text" class="header-search-input" name="header-search" id="header-search" placeholder="Search...">
+                <button class="header-search-submit" type="submit">
+                    <img src="images/search.png" alt="Search">
+                </button>
+            </form>
+        </div><!-- .header-search -->
       </div><!-- .container -->        
 </header>
 <div class="page-content">
     <div class="container skinny">
         <main class="site-main" role="main">
             <div class="content-area">
-                <article>
+                <article class="article-main">
                     <h2 class="header1">Image Optimization with Cloudinary</h2>
                     <div class="blogger">
-                    <div class="blogger-header">
-                        <span class="blogger-time"> 2 days ago by </span>              
+                        <span class="blogger-time"> 2 days ago by </span>
+                        <span class="blogger-image"><img src="images/paul.png" alt="blogger-name"></span>
+                        <span class="blogger-name"><a href="#">Paul Irish</a></span>
                     </div>
-                    <div class="blogger-meta">
-                       <div class="blogger-image"><img src="http://i.imgur.com/v80KFn4.jpg" alt="bloggername"  width="25px" height="25px">               
-                       </div>              
-                      <span class="blogger-name">Jonathan Graef</span>
-                   </div>          
-               </div>
-                <div class="img_place">
-                    <img src="http://ichef-1.bbci.co.uk/news/976/cpsprodpb/93DB/production/_88615873_976x1024b0010280.jpg" width="902px" height="375px">
-                </div><br>
-                <div class="desc">
-                    <div class="text1">
-                         We're always looking for ways to improve site speed. We lazy load, minify, and concatenate,  create sprites, experiment with caching, and just about everything else we can think of.
-                    <p></p>
-                         The idea behind image optimization is simple but execution hasn't always been:each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary:uploading, storing, amnipulating, and delivering images and videos on the web.
-                     <p></p>    
-                    <p class="header2"> Using Cloudinary</p>
-                    <p></p>
-                    There are many use cases for a service like Cloudinary. WhenI think about my site, I see one ovious need: resized,optimized images on post list pages. <span class="colorc"> Google PageSpeed</span> crucifies my sitefor image size and I an't blame them. I have a regex rouitine that searches for the first image in a post and uses that as the post image, but rouitine doesn't otimize images, so if the image is very large, I may scale it down with HTML attributes but the download size is still massive.
-                </div>
-            </div> <!--desc -->    
-            <div id="jspuzzle">
-                <input id="tab-1" type="radio" name="tab-group"  checked="checked" />
-                <label for="tab-1"><span class="clrcodr">JAVA SCRIPT</span>
-                </label>    
-                <input id="tab-3" type="radio" name="tab-group"/>
-                <label for="tab-3">RESULTS</label>    
-                <div id="jspuzzle-content">
-                    <div id="java-script">
-                        <figure>
-                            <p><code>
-                                <ol>
-                                    <li>
-                                        <span class="clrcodr">var</span>
-                                        <span class="clrclasscodb"> myArray</span>=[
-                                        <span class="clrcodr">6,5,4,3,1,2</span>];
-                                    </li>
-                                    <li>
-                                        <span class="clrcodr">myArray</span>.
-                                        <span class="clrcodp">sort()</span>;
-                                    </li>
-                                    <li>
-                                        <span class="clrcodr">console</span>.
-                                        <span class="clrcodp">log</span>(
-                                        <span class="clrcodr">myArray</span>); ->1,2,3,4,5
-                                    </li>
-                                </ol>
-                             </code></p>
-                             <figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.
-                             </figcaption>        
-                        </figure>
-                    </div>  <!-- java script -->
-                    <div id="results">
-                         <p> 1,2,3,4,5,6 </p>
-                    </div><!-- results -->
-               </div><!-- jspuzzle-content -->
-            </div><!-- jspuzzle --> 
-            <div class="desc">          
-                <div class="text2">
-                    If you are looking to serve media via the &lt;\picture&gt; element for different media queries, <span class="colorc">Cloudinary has an excellent structure</span> for doing that as well.
-                    <p></p>
-                    Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!
-                    <p></p>
-                    <p class="header2">Try Cloudinary!</p>
-                    <span id="colorc">Cloudinary</span> is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video. The APIs are all intuitive, effective, and easy to use. The optimization plugs are all usefull and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.
-                </div> <!-- text2 -->
-            </div> <!--desc-->    
-            </article>
+                    <div class="img_place">
+                        <img src="images/featured-image.png">
+                    </div>
+                    <div class="main-content">
+                        <p>We're always looking for ways to improve site speed; we lazy load, minify and concatenate, create sprites, experiment with caching, and just about everything else we can think of.</p>
+                        <p>The idea behind image optimization is simple but the execution hasn't always been: each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary: uploading, storing, manipulating, and delivering images and videos on the web.</p>
+                        <h3>Using Cloudinary</h3>
+                        <p>There are many use cases for a service like Cloudinary.  When I think about my site, I see one obvious need:  resized, optimized images on post list pages.  Google PageSpeed crucifies my site for image size and I can't blame them:  I have a regex routine that searches for the first image in a post and uses that as the post image, but the routine doesn't optimize images, so if the image is very large, I may scale it down with HTML attributes but the download size is still massive.</p>
+
+                        <div id="jspuzzle">
+                            <input id="tab-1" type="radio" name="tab-group"  checked="checked" />
+                            <label for="tab-1"><span class="clrcodr">JAVA SCRIPT</span>
+                            </label>
+                            <input id="tab-3" type="radio" name="tab-group"/>
+                            <label for="tab-3">RESULTS</label>
+                            <div id="jspuzzle-content">
+                                <div id="java-script">
+                                    <figure>
+                                        <p><code>
+                                            <ol>
+                                                <li>
+                                                    <span class="clrcodr">var</span>
+                                                    <span class="clrclasscodb"> myArray</span>=[
+                                                    <span class="clrcodr">6,5,4,3,1,2</span>];
+                                                </li>
+                                                <li>
+                                                    <span class="clrcodr">myArray</span>.<span class="clrcodp">sort()</span>;
+                                                </li>
+                                                <li>
+                                                    <span class="clrcodr">console</span>.<span class="clrcodp">log</span>(<span class="clrcodr">myArray</span>); ->1,2,3,4,5
+                                                </li>
+                                            </ol>
+                                         </code></p>
+                                         <figcaption id="fcap">This is javascript which sorts array of input numbers and display them to the console.
+                                         </figcaption>
+                                    </figure>
+                                </div>  <!-- java script -->
+                                <div id="results">
+                                     <p> 1,2,3,4,5,6 </p>
+                                </div><!-- results -->
+                           </div><!-- jspuzzle-content -->
+                        </div><!-- jspuzzle -->
+                        <p>If you're looking to serve media via the &lt;\picture&gt; element for different media queries, <a href="#">Cloudinary has an excellent structure</a> for doing that as well.</p>
+                        <p>Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!</p>
+                        <h3>Try Cloudinary!</h3>
+                        <p><a href="#">Cloudinary</a> is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video.  The APIs are all intuitive, effective, and easy to use.  The optimization plugs are all useful and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.</p>
+                    </div><!-- .main-content -->
+                </article>
             </div><!-- .content-area -->
             <div class="related-articles-container">
                 <h2>Related Articles on Encyclopedia.Modern Developer</h2>
@@ -185,7 +167,6 @@
                     </ul>
                 </nav><!-- .menu-social -->
             </div><!-- .post-meta -->
-
             <section class="section-comments">
                 <div class="respond">
                     <h2 class="comments-title">Post Comment</h2>
@@ -255,54 +236,68 @@
             <label for="tabs-1">Recent Articles</label>
 
             <input id="tabs-2" type="radio" name="tabs-group">
-            <label for="tabs-2">Upcoming Posts</label>
+            <label for="tabs-2" class="upcoming">Upcoming Posts</label>
 
             <div id="sidebar_content">
                 <div id="recent_articles">
-                    <ol class="sidebar_entry">        
-                       <li> <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
-                           <p>A day ago</p>
-                           <p class="customHr">-</p>
+                    <ul class="article-list recent-articles">
+                       <li>
+                           <a href="#">Getting Your Selected Articles Published on Encyclopedia</a>
+                           <p>a day ago</p>
                        </li>
-                       <li> <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
-                           <p>A  2 days ago</p>
-                           <p class="customHr">-</p>
+                       <li>
+                           <a href="#">Welcome to Encyclopedia Modern Developer</a>
+                           <p>2 days ago</p>
                        </li>
-                      <li> <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
+                      <li>
+                          <a href="#">All Trappings</a>
                           <p>12 days ago</p>
-                          <p class="customHr">-</p>
                       </li>
-                      <li>  <a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Getting Your Selected Article Published on Encyclopedia</a>
-                          <p>A day ago</p>
-                          <p class="customHr">-</p>
+                      <li>
+                          <a href="#">Getting Your Selected Article Published on Encyclopedia</a>
+                          <p>33 days ago</p>
                       </li>
-                      <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">Welcome to Encyclpedia Modern Developer</a>
-                          <p>A  2 days ago</p>
-                          <p class="customHr">-</p>
+                      <li>
+                          <a href="#">Welcome to Encyclpedia Modern Developer</a>
+                          <p>54 days ago</p>
                       </li>
-                      <li><a href="//htmlpreview.github.io/?https://github.com/efuller/md-blog-single/blob/develop/index.html#">All Trappings</a>
-                         <p>12 days ago</p>
+                      <li>
+                          <a href="#">All Trappings</a>
+                         <p>64 days ago</p>
                       </li>
-                  </ol> 
-              </div> <!--recent_articles-->
+                  </ul><!-- .recent_articles -->
+              </div> <!-- #recent_articles-->
               <div id="upcoming_posts">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.
-                  </p>
-                  <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-                 </ul>
+                  <ul class="article-list upcoming-posts">
+                      <li>
+                          <a href="#">Getting Your Selected Article Published on Encyclopedia</a>
+                      </li>
+                      <li>
+                          <a href="#">Welcome to Encyclpedia Modern Developer</a>
+                      </li>
+                      <li>
+                          <a href="#">All Trappings</a>
+                      </li>
+                      <li>
+                          <a href="#">Getting Your Selected Article Published on Encyclopedia</a>
+                      </li>
+                      <li>
+                          <a href="#">Welcome to Encyclpedia Modern Developer</a>
+                      </li>
+                      <li>
+                          <a href="#">All Trappings</a>
+                      </li>
+                  </ul>
              </div> <!-- upcoming posts-->
+                <div class="load-more">
+                    <input class="btn-load-more" type="submit" value="LOAD MORE">
+                </div>
              </div> <!-- sidebar_content -->
 		</div><!--sidebar tab-->	 
          <div class="sidebar_btn">
-             <div class="loadmore">
-                 <input type="submit" class="submit_lm" value="LOAD MORE">
-             </div>
              <div class="signup">
-                 <input type="email" class="txtinput_email" placeholder="Your Email">
-                 <input type="submit" class="subscribe"  value="Subscribe">
+                 <input type="email" class="subscribe-input" placeholder="Your Email">
+                 <input type="submit" class="subscribe-submit" value="Subscribe">
             </div> 
         </div><!-- sidebarbtn-->    
    </aside><!-- #sidebar .secondary -->      
