@@ -1,157 +1,215 @@
-
-.blogger{
-    left:140px;
-    margin-top:40px;
+.header1 {
+	margin-bottom: 12px;
+	margin-top: 43px;
+	padding-left: 64px;
+	font-family: "Roboto", sans-serif;
+	font-size: 44px;
+	font-weight: 300;
+	letter-spacing: 0.4px;
 }
 
-
-.blogger-header{
-    margin-top:-17px;
-    margin-left:58px;
-	float:left;
+.blogger {
+	padding-left: 64px;
 }
-.blogger-meta{
-    float:left;
-    margin-top: -22px;
+
+.blogger-header {
+	margin-top: -17px;
+	margin-left: 58px;
+	float: left;
 }
 
 .blogger-image {
 	float: left;
-	padding-left: 11px;
-	padding-bottom: 2em;
+	line-height: 1;
+	margin-top: -5px;
+	padding-left: 14px;
 	border-radius: 50%;
+}
+
+.blogger-name {
+	float: left;
+	font-size: 16px;
+	line-height: 1;
+	margin-top: -2px;
 }
 
 .blogger-image img {
 	border-radius: 2px;
+	vertical-align: middle;
 }
 
-.blogger-name {
-    float:left;
-    margin-left:6px;
-    margin-top:4px;
-    color:#EE82EE;
-    font-size:1em;
+.blogger-name a {
+	float: left;
+	font-size: 16px;
+	margin-left: 6px;
+	margin-top: 2px;
+	color: #EE82EE;
+	font-size: 1em;
+	text-decoration: none;
 }
-.blogger-time{
-    margin-left:10px;
-    font-size: 1em;
-    color:#A9A9A9;
+
+.blogger-name a:hover {
+	color: #FA8DD7;
 }
-.wrapper{
+
+.blogger-time {
+	float: left;
+	font-size: 16px;
+	color: #939393;
+	line-height: 1;
+}
+
+.wrapper {
 	margin-left: 100px;
 	padding-right: 50px;
 	max-width: 700px;
 	width: 50%;
-	background-color:#fff;
+	background-color: #fff;
 }
-.article h1{
+
+.article-main {
+	color: #3d3d3d;
+	font-size: 20px;
+	line-height: 1.7;
+}
+
+.main-content {
+	padding: 17px 70px 30px 64px;
+}
+
+.main-content p {
+	margin-bottom: 36px;
+}
+
+.article h1 {
 	text-align: center;
 }
-.text1, .text2{
-	margin: 1.2em 3.0em 0 3.2em;
-    font-size: 1.25em;
-    letter-spacing: 0.5px;
-    line-height: 1.6em;
 
+.article-main h3 {
+	color: #9941df;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.2;
 }
-.header1{
-    margin-top:55px;
-    padding-left: 64px;
-    font-family: "Roboto", sans-serif;
-    font-size: 44px;
-    font-weight: 300;
-    letter-spacing: 0.4px;
+
+.article-main a {
+	color: #ef7ccc;
+	text-decoration: none;
+	transition: color 0.3s;
 }
-.header2{
-    margin-top:2em;
-	text-align:left;
-	font-size: 1.6em;
-	color:#BA55D3;
-    opacity:0.7;
+
+.article-main a:hover {
+	color: #FA8DD7;
+}
+
+.img_place img {
+	max-width: 100%;
+}
+
+.text1, .text2 {
+	margin: 1.2em 3.0em 0 3.2em;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
+	line-height: 1.6em;
+
 }
 
 #jspuzzle {
-    margin: 2em;
-    width: 95%;
-}
-#jspuzzle input {
-	  height: 1.8em;
-	  visibility: hidden;
-}
-#jspuzzle label{
-    background: #f9f9f9;
-    border-radius: .25em .25em 0 0;
-    color: #888;
-    cursor: pointer;
-    display: block;
-    float: left;
-    font-size: 1em;
-    height: 4.5em;
-    padding: 0.5em 1.1em 1.5em 1.1em;
-    text-align: center;
-}
-#jspuzzle input:checked + label{
-    background: #f1f1f1;
-    color: #444;
-    position: relative;
-    z-index: 6;
+	margin: 32px 0 91px;
 }
 
-#jspuzzle-content{
-    background: #f1f1f1;
-    border-radius: 0 .25em .25em .25em;
-    min-height: 9em;
-    position: relative;
-    width: 100%;
-    z-index: 5;
+#jspuzzle input {
+	height: 1.8em;
+	visibility: hidden;
 }
-#jspuzzle-content div{
-    opacity: 0;
-    padding: 1.5em;
-    position: absolute;
-    z-index: -100;
+
+#jspuzzle label {
+	background: #f9f9f9;
+	border-radius: .25em .25em 0 0;
+	color: #888;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	float: left;
+	height: 4.5em;
+	padding: 0.7em 1.1em 1.5em 1.1em;
+	text-align: center;
 }
-#java-script p{
-    clear: both;
-    margin-bottom:1em;
+
+#jspuzzle input:checked + label {
+	background: #f1f1f1;
+	color: #444;
+	position: relative;
+	z-index: 6;
 }
-#java-script li{
-    margin-bottom:0.8em;
+
+#jspuzzle-content {
+	background: #f1f1f1;
+	border-radius: 0 .25em .25em .25em;
+	font-size: 16px;
+	min-height: 160px;
+	position: relative;
+	width: 100%;
+	z-index: 5;
 }
-#results p
-{
-  margin-bottom: 1em;
+
+#jspuzzle-content div {
+	opacity: 0;
+	padding: 1.4em;
+	position: absolute;
+	z-index: -100;
+}
+
+#jspuzzle-content figure {
+	margin: 1em 0;
+}
+
+#java-script p {
+	clear: both;
+	margin-bottom: 1em;
+}
+
+#java-script li {
+	margin-bottom: 0.8em;
+}
+
+#results p {
+	margin-bottom: 1em;
 }
 
 #jspuzzle input#tab-1:checked ~ #jspuzzle-content #java-script,
-
-#jspuzzle input#tab-3:checked ~ #jspuzzle-content #results
-{
-    opacity: 1;
-    z-index: 100;  
-}
-input.visible{
-    visibility: visible !important;
+#jspuzzle input#tab-3:checked ~ #jspuzzle-content #results {
+	opacity: 1;
+	z-index: 100;
 }
 
-.colorc{
-    color:#da3eb0;
+input.visible {
+	visibility: visible !important;
 }
-.clrcodr{
-    color:red;
+
+.colorc {
+	color: #da3eb0;
 }
-.clrcodb{
-  color:blue;
+
+.clrcodr {
+	color: #f36fb1;
 }
-.clrcodp{
-    color:#EE82EE;
+
+.clrcodb {
+	color: blue;
 }
-.text2{
-  margin:2em;
+
+.clrcodp {
+	color: #EE82EE;
 }
-#fcap{
-  padding-top: 1em;
-  font-size: 0.9em;
+
+.text2 {
+	margin: 2em;
+}
+
+#fcap {
+	color: #5e5e5e;
+	padding-top: 8px;
+	font-size: 14px;
 }
 

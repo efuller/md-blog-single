@@ -70,11 +70,13 @@ body {
 .secondary {
 	float: left;
 	width: 27.185%;
-	background-color:#262020;
 }
+
 .img_place {
-        width:100%;
+	margin-top: 28px;
+	width: 100%;
 }
+
 .section-footer {
 	padding: 0 63px;
 }
