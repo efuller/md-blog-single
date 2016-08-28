@@ -1,4 +1,4 @@
-# UI for Blog.Modern Developer
+# UI for Blog.Modern Developer - status: complete
 
 ## Team: Astonishing-Lily-Trotter
 
