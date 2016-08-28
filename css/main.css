@@ -201,7 +201,6 @@ header.site-header {
 	margin-left: 6px;
 	margin-top: 2px;
 	color: #EE82EE;
-	font-size: 1em;
 	text-decoration: none;
 }
 
@@ -417,7 +416,7 @@ input.visible {
 	padding: 0 45px 0 30px;
 }
 
-.article-list  li {
+.article-list li {
 	border-bottom: 1px solid #2d3742;
 	padding-bottom: 16px;
 	padding-top: 21px;
@@ -507,7 +506,7 @@ input[type="submit"].subscribe-submit:hover {
 }
 
 ::-webkit-input-placeholder {
-	padding-top:3px;
+	padding-top: 3px;
 }
 
 #upcoming_posts {
@@ -517,6 +516,7 @@ input[type="submit"].subscribe-submit:hover {
 #sidebar-tab input#tabs-2:checked ~ #sidebar_content #recent_articles {
 	display: none;
 }
+
 #sidebar-tab input#tabs-2:checked ~ #sidebar_content #upcoming_posts {
 	display: block;
 }
@@ -543,9 +543,9 @@ input[type="submit"].subscribe-submit:hover {
 }
 
 .related-articles {
-	counter-reset:li; /* Initiate a counter */
-	margin-left:0; /* Remove the default left margin */
-	padding-left:0; /* Remove the default left padding */
+	counter-reset: li; /* Initiate a counter */
+	margin-left: 0; /* Remove the default left margin */
+	padding-left: 0; /* Remove the default left padding */
 	position: relative;
 }
 
@@ -562,10 +562,10 @@ input[type="submit"].subscribe-submit:hover {
 .related-articles > li {
 	font-size: 18px;
 	font-weight: 400;
-	list-style:none; /* Create a positioning context */
-	margin:0 0 16px 39px; /* Give each list item a left margin to make room for the numbers */
-	padding:4px 26px; /* Add some spacing around the content */
-	position:relative; /* Disable the normal item numbering */
+	list-style: none; /* Create a positioning context */
+	margin: 0 0 16px 39px; /* Give each list item a left margin to make room for the numbers */
+	padding: 4px 26px; /* Add some spacing around the content */
+	position: relative; /* Disable the normal item numbering */
 }
 
 .related-articles > li a {
@@ -583,26 +583,26 @@ input[type="submit"].subscribe-submit:hover {
 }
 
 .related-articles > li a:before {
-	content:counter(li); /* Use the counter as content */
-	counter-increment:li; /* Increment the counter by 1 */
+	content: counter(li); /* Use the counter as content */
+	counter-increment: li; /* Increment the counter by 1 */
 	/* Position and style the number */
-	position:absolute;
-	top: 0px;
-	left:-2em;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
+	position: absolute;
+	top: 0;
+	left: -2em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 24px;
 	/* Some space between the number and the content in browsers that support
 	   generated content but not positioning it (Camino 2 is one example) */
-	margin-right:8px;
+	margin-right: 8px;
 	padding: 6px 4px 4px;
-	border:1px solid #CCCCCC;
-	color:#ADADAD;
-	background:#FFFFFF;
+	border: 1px solid #CCCCCC;
+	color: #ADADAD;
+	background: #FFFFFF;
 	border-radius: 50%;
 	font-size: 12px;
-	text-align:center;
+	text-align: center;
 	transition: background-color 0.225s ease, color 0.225s ease;
 
 }
@@ -684,7 +684,7 @@ input[type="submit"].subscribe-submit:hover {
 
 .icon {
 	height: 16px;
-	left:50%;
+	left: 50%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -774,7 +774,6 @@ input[type="submit"].subscribe-submit:hover {
 .comment-form-submit input[type="submit"]:active {
 	background-color: #FA8DD7;
 }
-
 
 .comment-author-image {
 	float: left;
