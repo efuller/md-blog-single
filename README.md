@@ -5,7 +5,7 @@
 [Live Demo](https://efuller.github.io/md-blog-single/)
 
 ### Contributors
-[Natalie Vaslavsky](https://github.com/ModernTek)
+[Natalie Vaslavsky](https://github.com/ModernTek)  
 [Eric Fuller](https://github.com/efuller)
 
 ### Git WorkFlow
