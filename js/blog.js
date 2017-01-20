@@ -90,9 +90,13 @@
 				]
 			}
 		],
+		searchText: '',
+		emailAddress: '',
 	};
 
 	var postComment = document.getElementById("postComment");
+	var searchInput = document.getElementById('header-search');
+	var searchForm = document.getElementById('search-form');
 
 	function addComment() {
 		console.log("we are in addComment");
@@ -125,5 +129,60 @@
 			console.log("comment_date = " + data.postComments[i].comment_date);
 			console.log("comment_content = " + data.postComments[i].comment_content);
 		}
-	})
+	});
+
+	// Bind event listener to the search form.
+	searchForm.addEventListener('submit', submitSearch);
+
+	// Clear the search input when you start typing.
+	searchInput.addEventListener('keyup', hideValidationMessage);
+
+	// Show validation message
+	function showValidationMessage(input, message) {
+		// Get the parent.
+		var parent = input.parentNode;
+
+		// Get the validation message element.
+		var validationMessage = parent.querySelector('.validation-message');
+
+		// Set the message.
+		validationMessage.textContent = message || 'Please verify the input.';
+
+		// Show the validation text.
+		validationMessage.style.display = 'block';
+	}
+
+	function hideValidationMessage(e) {
+		// Get the parent.
+		var parent = e.target.parentNode;
+
+		// Get the validation message element.
+		var validationMessage = parent.querySelector('.validation-message');
+
+		// Hide the validation message element.
+		validationMessage.style.display = 'none';
+	}
+
+	// Submit search
+	function submitSearch(e) {
+		// Get the value of the input.
+		var value = searchInput.value;
+
+		// Prevent default action.
+		e.preventDefault();
+
+		// If no value, show validation message.
+		if (!value) {
+			showValidationMessage(searchInput, 'Please enter a search term.');
+		}
+
+		// Set the search text in our data object.
+		data.searchText = value;
+
+		// If there is search text.
+		if (data.searchText) {
+			// Log out the value.
+			console.log(JSON.stringify(data, null, 2));
+		}
+	}
 }());

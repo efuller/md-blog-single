@@ -865,3 +865,12 @@ input[type="submit"].subscribe-submit:hover {
 .primary-footer .site-title span {
 	color: darkgrey;
 }
+
+.validation-message {
+	color: #f263cf;
+	display: none;
+}
+
+.header-search .validation-message {
+	position: absolute;
+}

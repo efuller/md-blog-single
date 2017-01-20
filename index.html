@@ -38,12 +38,13 @@
             <h1 class="site-title"><span>Blog</span>.Modern Developer</h1>
         </div><!-- .brand -->
         <div class="header-search">
-            <form action="">
+            <form id="search-form" action="">
                 <label for="header-search" class="screen-reader">Search</label>
                 <input type="text" class="header-search-input" name="header-search" id="header-search" placeholder="Search...">
                 <button class="header-search-submit" type="submit">
                     <img src="images/search.png" alt="Search">
                 </button>
+	            <span class="validation-message">Please enter a search term.</span>
             </form>
         </div><!-- .header-search -->
       </div><!-- .container -->        
@@ -289,9 +290,12 @@
 		</div><!--sidebar tab-->	 
          <div class="sidebar_btn">
              <div class="signup">
-                 <input type="email" class="subscribe-input" placeholder="Your Email">
-                 <input type="submit" class="subscribe-submit" value="Subscribe">
-            </div> 
+	             <form id="subscribe">
+	                <span class="validation-message">Please enter an email address.</span>
+                    <input type="email" class="subscribe-input" placeholder="Your Email">
+                    <input type="submit" class="subscribe-submit" value="Subscribe">
+	             </form>
+            </div>
         </div><!-- sidebarbtn-->    
    </aside><!-- #sidebar .secondary -->      
 </div><!--container skinny-->
@@ -309,5 +313,5 @@
     </div>
 </footer>
 </body>
-<script type="text/javascript" src="blog.js"></script>
+<script type="text/javascript" src="js/blog.js"></script>
 </html>
