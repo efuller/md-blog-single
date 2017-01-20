@@ -97,12 +97,11 @@
 	var postComment = document.getElementById("postComment");
 	var searchInput = document.getElementById('header-search');
 	var searchForm = document.getElementById('search-form');
-
+        var comment = document.getElementById("comment");
 	function addComment() {
 		console.log("we are in addComment");
 		var comment_author = 'Natalie Vaslavsky';
 		var numberOfComments = data.postComments.length;
-		var comment = document.getElementById("comment");
 		var comment_content = comment.value;
 		data.postComments.push({
 			"comment_id": numberOfComments + 1,
@@ -114,6 +113,9 @@
 
 	// Natalie: Please have a look at this. Comment is declared inside addComment()
 	// and therefore isn't available outside that function.
+	//Eric I moved declaring comment outside the function.
+	//However, I have noticed that addComment function did get involved regardless.
+	//I cannot explain why.
 	comment.addEventListener('change', addComment, false);
 
 	postComment.addEventListener('submit', function (event) {
