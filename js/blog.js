@@ -94,50 +94,43 @@
 		emailAddress: '',
 	};
 
+	// Cache DOM elements.
 	var postComment = document.getElementById("postComment");
 	var searchInput = document.getElementById('header-search');
 	var searchForm = document.getElementById('search-form');
-        var comment = document.getElementById("comment");
-	function addComment() {
-		console.log("we are in addComment");
-		var comment_author = 'Natalie Vaslavsky';
-		var numberOfComments = data.postComments.length;
-		var comment_content = comment.value;
-		data.postComments.push({
-			"comment_id": numberOfComments + 1,
-			"comment_author": comment_author,
-			"comment_date": new Date(),
-			"comment_content": comment_content
-		});
-	}
-
-	// Natalie: Please have a look at this. Comment is declared inside addComment()
-	// and therefore isn't available outside that function.
-	//Eric I moved declaring comment outside the function.
-	//However, I have noticed that addComment function did get involved regardless.
-	//I cannot explain why.
-	comment.addEventListener('change', addComment, false);
-
-	postComment.addEventListener('submit', function (event) {
-		event.preventDefault();
-
-		console.log("Get object " + data.postComments.length);
-		console.log("Before display contents");
-		console.log("title " + data.title);
-		console.log("description " + data.description);
-		for (var i = 0; i < data.postComments.length; i++) {
-			console.log("comment_id = " + data.postComments[i].comment_id);
-			console.log("comment_author = " + data.postComments[i].comment_author);
-			console.log("comment_date = " + data.postComments[i].comment_date);
-			console.log("comment_content = " + data.postComments[i].comment_content);
-		}
-	});
+	var comment = document.getElementById('comment');
 
 	// Bind event listener to the search form.
 	searchForm.addEventListener('submit', submitSearch);
 
 	// Clear the search input when you start typing.
 	searchInput.addEventListener('keyup', hideValidationMessage);
+
+	// Bind event for post comment submission.
+	postComment.addEventListener('submit', addComment);
+
+	// Add in a new comment.
+	function addComment(e) {
+		// Prevent default
+		e.preventDefault();
+
+		console.log("We are adding in a comment.");
+
+		var comment_author = 'Natalie Vaslavsky';
+		var numberOfComments = data.postComments.length;
+		var comment_content = comment.value;
+
+		// Push comments into comments array.
+		data.postComments.push({
+			"comment_id": numberOfComments + 1,
+			"comment_author": comment_author,
+			"comment_date": new Date(),
+			"comment_content": comment_content
+		});
+
+		// Let's display our current comments.
+		console.log(JSON.stringify(data.postComments, null, 2));
+	}
 
 	// Show validation message
 	function showValidationMessage(input, message) {
