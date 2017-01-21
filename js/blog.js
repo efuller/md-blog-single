@@ -90,14 +90,16 @@
 				]
 			}
 		],
-		searchText: '',
-		emailAddress: '',
+		searchText: [],
+		emailAddress: [],
 	};
 
 	// Cache DOM elements.
 	var postComment = document.getElementById("postComment");
 	var searchInput = document.getElementById('header-search');
 	var searchForm = document.getElementById('search-form');
+	var subscribeForm = document.getElementById('subscribe');
+	var subscribeInput = document.getElementById('subscribe-input');
 	var comment = document.getElementById('comment');
 
 	// Bind event listener to the search form.
@@ -108,6 +110,9 @@
 
 	// Bind event for post comment submission.
 	postComment.addEventListener('submit', addComment);
+
+	// Bind subscribe form submission
+	subscribeForm.addEventListener('submit', submitSubscribe);
 
 	// Add in a new comment.
 	function addComment(e) {
@@ -172,12 +177,26 @@
 		}
 
 		// Set the search text in our data object.
-		data.searchText = value;
+		data.searchText.push(value);
 
 		// If there is search text.
 		if (data.searchText) {
 			// Log out the value.
 			console.log(JSON.stringify(data, null, 2));
 		}
+	}
+
+	// Subscribe submit.
+	function submitSubscribe(e) {
+		// Prevent default action.
+		e.preventDefault();
+
+		var email = subscribeInput.value.trim();
+
+		// Add email to our array of submission.
+		data.emailAddress.push(email);
+
+		// Log out the data object.
+		console.log(JSON.stringify(data, null, 2));
 	}
 }());
